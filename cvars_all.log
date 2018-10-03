@@ -542,8 +542,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1537126928 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1537126912 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1538610961 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1538610944 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -585,6 +585,7 @@ cash_team_win_by_defusing_bomb            | 3250     | "cl", "nf", "rep" |
 cash_team_win_by_hostage_rescue           | 3500     | "cl", "nf", "rep" | 
 cash_team_win_by_time_running_out_bomb    | 3250     | "cl", "nf", "rep" | 
 cash_team_win_by_time_running_out_hostage | 3250     | "cl", "nf", "rep" | 
+cash_team_winner_bonus_consecutive_rounds | 0        | "cl", "nf", "rep" | 
 cast_hull                                 | cmd      | "sv", "cheat"    | Tests hull collision detection
 cast_ray                                  | cmd      | "sv", "cheat"    | Tests collision detection
 cc_captiontrace                           | 1        | "devonly", "cl"  | Show missing closecaptions (0 = no, 1 = devconsole, 2 = show in hud)
@@ -798,9 +799,9 @@ cl_dump_particle_stats                    | cmd      | "cl"             | dump p
 cl_dumpplayer                             | cmd      | "cl", "cheat"    | Dumps info about a player
 cl_dumpsplithacks                         | cmd      | "cl"             | Dump split screen workarounds.
 cl_ejectbrass                             | 1        | "devonly", "cl"  | 
-cl_embedded_stream_audio_volume           | 0        | "cl", "hidden", "a" | Embedded stream audio volume
-cl_embedded_stream_audio_volume_xmaster   | 0        | "cl", "hidden", "a" | Whether embedded stream audio volume gets multiplied by master volume
-cl_embedded_stream_video_playing          | 0.009901 | "devonly", "cl", "hidden" | Embedded stream video playing state
+cl_embedded_stream_audio_volume           | 60       | "cl", "hidden", "a" | Embedded stream audio volume
+cl_embedded_stream_audio_volume_xmaster   | 1        | "cl", "hidden", "a" | Whether embedded stream audio volume gets multiplied by master volume
+cl_embedded_stream_video_playing          | 0        | "devonly", "cl", "hidden" | Embedded stream video playing state
 cl_enable_remote_splitscreen              | 0        | "devonly", "cl"  | Allows viewing of nonlocal players in a split screen fashion
 cl_ent_absbox                             | cmd      | "cl", "cheat"    | Displays the client's absbox for the entity under the crosshair.
 cl_ent_bbox                               | cmd      | "cl", "cheat"    | Displays the client's bounding box for the entity under the crosshair.
@@ -1589,7 +1590,7 @@ hostage_drop_time                         | 1        | "devonly", "sv"  | Time f
 hostage_feetyawrate                       | 720      | "devonly", "cl", "rep" | How many degrees per second that hostages can turn their feet or upper body.
 hostage_is_silent                         | 0        | "sv", "cheat"    | When set, the hostage won't play any code driven response rules lines
 hostfile                                  | host.txt | "sv"             | The HOST file to load.
-hostip                                    | -1062686188 |                  | Host game server ip
+hostip                                    | -1062731518 |                  | Host game server ip
 hostname                                  | [redacted] |                  | Hostname for server.
 hostport                                  | 27015    |                  | Host game server port
 http_cache_size                           | 150      | "devonly"        | 
@@ -2446,7 +2447,7 @@ mp_roundtime_hostage                      | 0        | "sv", "nf", "rep" | How m
 mp_scrambleteams                          | cmd      | "sv"             | Scramble the teams and restart the game
 mp_showcleanedupents                      | 0        | "devonly", "sv", "cheat" | Show entities that are removed on round respawn.
 mp_showroundtransitions                   | 0        | "devonly", "sv", "cheat" | Show gamestate round transitions.
-mp_solid_teammates                        | 1        | "cl", "rep"      | Determines whether teammates are solid or not.
+mp_solid_teammates                        | 1        | "cl", "rep"      | How solid are teammates: 0 = transparent; 1 = fully solid; 2 = can stand on top of heads
 mp_spawnprotectiontime                    | 5        | "sv", "rep"      | Kick players who team-kill within this many seconds of a round restart.
 mp_spec_swapplayersides                   | 0        | "cl", "rep"      | Toggle set the player names and team names to the opposite side in which they are are on the spectator panel.
 mp_spectators_max                         | 2        | "cl", "rep"      | How many spectators are allowed in a match.
@@ -2835,6 +2836,7 @@ panorama_debugger_saved_width             | 1280     | "a"              |
 panorama_debugger_saved_xpos              | 0        | "a"              | 
 panorama_debugger_saved_ypos              | 0        | "a"              | 
 panorama_dump_deny_input                  | cmd      | "devonly"        | Dumps panels currently denying all input to the game
+panorama_dump_events_backlog              | 0        |                  | 
 panorama_light_inout_scale                | 0.5      | "devonly", "cl"  | 
 panorama_light_move_scale                 | 0.1      | "devonly", "cl"  | 
 panorama_light_rotate_altitude_scale      | 0.004    | "devonly", "cl"  | 
@@ -3725,7 +3727,7 @@ snd_stereo_speaker_pan_radial_weight      | cmd      |                  | Apply 
 snd_store_filepaths                       |          | "devonly"        | 
 snd_surround_speaker_pan_exponent         | cmd      |                  | Specifies the exponent for the pan xfade from speaker to speaker if the "exp" pan law is being used.
 snd_surround_speaker_pan_radial_weight    | cmd      |                  | Apply cos(angle) * weight before pan law
-snd_surround_speakers                     | -1       | "devonly"        | 
+snd_surround_speakers                     | -1       | "a"              | 
 snd_tensecondwarning_volume               | 0        | "a"              | Relative volume of ten second warning music.
 snd_use_hrtf_onetime_reset                | 0        | "hidden", "a"    | 
 snd_visualize                             | 0        | "cheat"          | Show sounds location in world
@@ -3852,7 +3854,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1863229603281 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1870433341386 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4627,7 +4629,6 @@ weapon_showproficiency                    | 0        | "devonly", "sv"  |
 webapi_values_init_buffer_size_0          | 65536    | "devonly", "cl"  | Initial buffer size for buffers in the WebAPIValues buffer pool
 webapi_values_max_pool_size_mb_0          | 10       | "devonly", "cl"  | Maximum size in bytes of the WebAPIValues buffer pool
 whitelistcmd                              | cmd      |                  | Runs a whitelisted command.
-windows_speaker_config                    | 0        | "a"              | 
 wipe_nav_attributes                       | cmd      | "sv", "cheat"    | Clear all nav attributes of selected area.
 workshop_publish                          | cmd      | "cl", "norecord" | Bring up the Workshop Publish dialog.
 workshop_start_map                        | cmd      | "sv"             | Sets the first map to load once a workshop collection been hosted. Takes the file id of desired start map as a parameter.
