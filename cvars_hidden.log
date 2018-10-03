@@ -234,8 +234,8 @@ breakable_multiplayer                     | 1        | "devonly", "sv"  |
 bugreporter_console_bytes                 | 15000    | "devonly"        | Max # of console bytes to put into bug report body (full text still attached).
 bugreporter_includebsp                    | 1        | "devonly"        | Include .bsp for internal bug submissions.
 bugreporter_snapshot_delay                | 15       | "devonly"        | Frames to delay before taking snapshot
-cachedvalue_count_partybrowser            | 1537126928 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1537126912 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1538609413 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1538609920 | "cl", "hidden", "a" | 
 camortho                                  | cmd      | "devonly", "cl", "cheat" | Switch to orthographic camera.
 cc_captiontrace                           | 1        | "devonly", "cl"  | Show missing closecaptions (0 = no, 1 = devconsole, 2 = show in hud)
 cc_minvisibleitems                        | 1        | "devonly", "cl"  | Minimum number of caption items to show.
@@ -271,7 +271,7 @@ cl_bot_difficulty_ps3move                 | 0        | "devonly", "cl", "hidden"
 cl_bot_difficulty_sharpshooter            | 0        | "devonly", "cl", "hidden" | Bot difficulty while playing with SharpShooter device
 cl_burninggibs                            | 0        | "devonly", "cl"  | A burning player that gibs has burning gibs.
 cl_chat_active                            | 0        | "devonly", "cl"  | 
-cl_chatfilter_version                     | 0        | "cl", "hidden", "a" | Stores the chat filter version
+cl_chatfilter_version                     | 1        | "cl", "hidden", "a" | Stores the chat filter version
 cl_clanid                                 | 0        | "hidden", "a", "user" | Current clan ID for name decoration
 cl_cloud_settings                         | 0        | "devonly", "hidden" | Cloud enabled from (from HKCU\Software\Valve\Steam\Apps\appid\Cloud)
 cl_colorfastpath                          | 0        | "devonly", "cl"  | 
@@ -345,9 +345,9 @@ cl_disable_splitscreen_cpu_level_cfgs_in_pip | 1        | "devonly", "cl"  |
 cl_disable_water_render_targets           | 0        | "devonly", "cl"  | 
 cl_drawmonitors                           | 1        | "devonly", "cl"  | 
 cl_ejectbrass                             | 1        | "devonly", "cl"  | 
-cl_embedded_stream_audio_volume           | 0        | "cl", "hidden", "a" | Embedded stream audio volume
+cl_embedded_stream_audio_volume           | 40       | "cl", "hidden", "a" | Embedded stream audio volume
 cl_embedded_stream_audio_volume_xmaster   | 0        | "cl", "hidden", "a" | Whether embedded stream audio volume gets multiplied by master volume
-cl_embedded_stream_video_playing          | 0.009901 | "devonly", "cl", "hidden" | Embedded stream video playing state
+cl_embedded_stream_video_playing          | 0        | "devonly", "cl", "hidden" | Embedded stream video playing state
 cl_enable_remote_splitscreen              | 0        | "devonly", "cl"  | Allows viewing of nonlocal players in a split screen fashion
 cl_failremoteconnections                  | 0        | "devonly"        | Force connection attempts to time out
 cl_fasttempentcollision                   | 5        | "devonly", "cl"  | 
@@ -520,7 +520,7 @@ cpu_level_restart                         | -1       | "devonly", "cl"  | Used t
 cs_AssistDamageThreshold                  | 40.0     | "devonly", "sv"  | cs_AssistDamageThreshold defines the amount of damage needed to score an assist
 cs_econ_item_string_table_debug           | 0        | "devonly", "cl"  | 
 csgo_econ_action_preview                  | cmd      | "cl", "hidden", "norecord" | Preview an economy item
-csm_quality_level                         | 3        | "devonly"        | Cascaded shadow map quality level, [0,3], 0=VERY_LOW, 3=HIGHEST
+csm_quality_level                         | 1        | "devonly"        | Cascaded shadow map quality level, [0,3], 0=VERY_LOW, 3=HIGHEST
 csm_quality_level_optionsui               | 9999999  | "devonly", "cl"  | Used to set video property from options UI.
 csm_quality_level_restart                 | 0        | "devonly", "cl"  | Used to set video property at device reset.
 damage_impact_heavy                       | 40       | "devonly", "cl"  | Damage ABOVE this value is considered heavy damage
@@ -562,7 +562,7 @@ dispcoll_drawplane                        | 0        | "devonly", "sv"  |
 displaysoundlist                          | 0        | "devonly", "sv"  | 
 dsp_automatic                             | 0        | "devonly", "demo" | 
 dsp_facingaway                            | 0        | "devonly", "demo" | 
-dsp_room                                  | 29       | "devonly", "demo" | 
+dsp_room                                  | 29.000000 | "devonly", "demo" | 
 dsp_spatial                               | 40.000000 | "devonly", "demo" | 
 dsp_speaker                               | 50.000000 | "devonly", "demo" | 
 dsp_vol_2ch                               | 1.0      | "devonly", "demo" | 
@@ -660,7 +660,7 @@ glow_muzzle_debug                         | 0        | "devonly", "cl", "cheat" 
 gpu_level                                 | 3        | "devonly"        | GPU Level - Default: High
 gpu_level_optionsui                       | 9999999  | "devonly", "cl"  | Used to set video property from options UI.
 gpu_level_restart                         | -1       | "devonly", "cl"  | Used to set video property at device reset.
-gpu_mem_level                             | 2        | "devonly"        | Memory Level - Default: High
+gpu_mem_level                             | 1        | "devonly"        | Memory Level - Default: High
 gpu_mem_level_optionsui                   | 9999999  | "devonly", "cl"  | Used to set video property from options UI.
 gpu_mem_level_restart                     | -1       | "devonly", "cl"  | Used to set video property at device reset.
 hermite_fix                               | 1        | "devonly", "cl"  | Don't interpolate previous hermite sample when fixing up times.
@@ -748,7 +748,7 @@ mat_aaquality_optionsui                   | 9999999  | "devonly", "cl"  | Used t
 mat_aaquality_restart                     | 0        | "devonly", "cl"  | Used to set video property at device reset.
 mat_alphacoverage                         | 1        | "devonly"        | 
 mat_alternatefastclipalgorithm            | 1        | "devonly"        | 
-mat_antialias                             | 8        | "devonly"        | 
+mat_antialias                             | 4        | "devonly"        | 
 mat_antialias_optionsui                   | 9999999  | "devonly", "cl"  | Used to set video property from options UI.
 mat_antialias_restart                     | 0        | "devonly", "cl"  | Used to set video property at device reset.
 mat_async_tex_maxtime_ms                  | 0.5      | "devonly"        | Cutoff time (in ms) spent in ServiceAsyncTextureLoads
@@ -820,7 +820,7 @@ mat_fxaa_edge_threshold_min_Q             | 0.0      | "devonly", "cl"  | Trims 
 mat_fxaa_subpixel_C                       | 0.5      | "devonly", "cl"  | Effects sub-pixel AA quality and inversely sharpness (only used on FXAA Console): (0.33 - sharper), (0.5 - default)
 mat_fxaa_subpixel_Q                       | 0.75     | "devonly", "cl"  | Effects sub-pixel AA quality and inversely sharpness (only used on FXAA Quality): (0.0 - off), (1.0 - upper limit, softer), default = 0.75
 mat_grain_enable                          | 1        | "devonly", "cl"  | 
-mat_grain_scale_override                  | -1.0     | "devonly", "cheat" | 
+mat_grain_scale_override                  | -1.000000 | "devonly", "cheat" | 
 mat_hdr_level                             | 2        | "devonly"        | Set to 0 for no HDR, 1 for LDR+bloom on HDR maps, and 2 for full HDR on HDR maps.
 mat_leafvis_draw_mask                     | 3        | "devonly"        | A bitfield which affects leaf visibility debug rendering.  -1: show all, bit 0: render PVS-visible leafs, bit 1: render PVS- and frustum-visible leafs, bit 2: render frustum bounds, bit 3: render leaves out of PVS.
 mat_leafvis_freeze                        | 0        | "devonly"        | If set to 1, uses the last known leaf visibility data for visualization.  If set to 0, updates based on camera movement.
@@ -856,7 +856,7 @@ mat_parallaxmapsamplesmax                 | 50       | "devonly"        |
 mat_parallaxmapsamplesmin                 | 12       | "devonly"        | 
 mat_phong                                 | 1        | "devonly"        | 
 mat_phong_lightmappedgeneric              | 1        | "devonly"        | 0 = disable, 1 = default, 2 = visualize phong component only (no diffuse)
-mat_picmip                                | -1       | "devonly"        | 
+mat_picmip                                | 0        | "devonly"        | 
 mat_postprocess_x                         | 4        | "devonly", "cl"  | 
 mat_postprocess_y                         | 1        | "devonly", "cl"  | 
 mat_print_top_model_vert_counts           | 0        | "devonly"        | Constantly print to screen the top N models as measured by total faces rendered this frame
@@ -880,7 +880,7 @@ mat_software_aa_blur_one_pixel_lines      | 0.5      | "devonly", "cl"  | How mu
 mat_software_aa_debug                     | 0        | "devonly", "cl"  | Software AA debug mode: (0 - off), (1 - show number of 'unlike' samples: 0->black, 1->red, 2->green, 3->blue), (2 - show anti-alias blend strength), (3 - show averaged 'unlike' colour)
 mat_software_aa_edge_threshold            | 1.0      | "devonly", "cl"  | Software AA - adjusts the sensitivity of the software AA shader's edge detection (default 1.0 - a lower value will soften more edges, a higher value will soften fewer)
 mat_software_aa_quality                   | 0        | "devonly", "cl"  | Software AA quality mode: (0 - 5-tap filter), (1 - 9-tap filter)
-mat_software_aa_strength                  | 1        | "devonly"        | Software AA - perform a software anti-aliasing post-process (an alternative/supplement to MSAA). This value sets the strength of the effect: (0.0 - off), (1.0 - full)
+mat_software_aa_strength                  | 0        | "devonly"        | Software AA - perform a software anti-aliasing post-process (an alternative/supplement to MSAA). This value sets the strength of the effect: (0.0 - off), (1.0 - full)
 mat_software_aa_strength_vgui             | -1.0     | "devonly", "cl"  | Same as mat_software_aa_strength, but forced to this value when called by the post vgui AA pass.
 mat_software_aa_tap_offset                | 1.0      | "devonly", "cl"  | Software AA - adjusts the displacement of the taps used by the software AA shader (default 1.0 - a lower value will make the image sharper, higher will make it blurrier)
 mat_softwarelighting                      | 0        | "devonly"        | 
@@ -1517,8 +1517,7 @@ snd_soundmixer_version                    | 2        | "devonly"        |
 snd_spatialize_roundrobin                 | 0        | "devonly"        | Lowend optimization: if nonzero, spatialize only a fraction of sound channels each frame. 1/2^x of channels will be spatialized per frame.
 snd_spew_dsp_process                      | 0        | "devonly"        | Spews text every time a DSP effect is applied if set to 1. 0 to turn the spew off (default).
 snd_store_filepaths                       |          | "devonly"        | 
-snd_surround_speakers                     | -1       | "devonly"        | 
-snd_use_hrtf_onetime_reset                | 0        | "hidden", "a"    | 
+snd_use_hrtf_onetime_reset                | 1        | "hidden", "a"    | 
 snd_voice_echo                            | 0        | "devonly"        | 
 snd_vol_no_xfade                          | 5.0      | "devonly"        | If current and target volumes are close, don't cross-fade.
 snd_vol_xfade_incr_max                    | 20.0     | "devonly"        | Never change volume by more than +/-N units per frame during cross-fade.
@@ -1568,7 +1567,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1863229367281 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1870431817800 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
