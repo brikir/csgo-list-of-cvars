@@ -543,7 +543,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1538610961 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1538610944 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1538701568 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3854,7 +3854,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1870433341386 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1870834246657 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4017,6 +4017,7 @@ sv_lagflushbonecache                      | 1        | "devonly", "sv"  | Flushe
 sv_lagpushticks                           | 0        | "devonly", "sv"  | Push computed lag compensation amount by this many ticks.
 sv_lan                                    | 0        |                  | Server is a lan server ( no heartbeat, no authentication, no non-class C addresses )
 sv_load_forced_client_names_file          | cmd      | "sv"             | Loads a file containing SteamID64 names for clients
+sv_load_random_client_names_file          | cmd      | "sv"             | Loads a file containing random name words for clients
 sv_log_http_record_before_any_listeners   |          | "sv"             | 
 sv_log_onefile                            | 0        | "a"              | Log server information to only one file.
 sv_logbans                                | 0        | "a"              | Log server bans in the server logs.
