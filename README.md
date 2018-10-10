@@ -1,1 +1,10 @@
 # csgo-list-of-cvars
+
+This is a list of changed ConVars in the recent updates. The change list result from the file history.
+
+| Update | Changes |
+| ------------- | ------------- |
+| Initial relese (16.9.2018)  | https://github.com/funeralchris/csgo-list-of-cvars/blob/faf896ff13f61c9ab837ebe3e4375d47805dd682/cvars_all.log  |
+| 3.10.2018  | https://github.com/funeralchris/csgo-list-of-cvars/commit/c944a5c69f5f689b5092ae3ac607661ce609badb#diff-ca2066e640294151d6fb370d1944ab19 |
+| 4.10.2018  | https://github.com/funeralchris/csgo-list-of-cvars/commit/287893bf3de5ef5c897e2404ca421dd9581933bc#diff-ca2066e640294151d6fb370d1944ab19 |
+| 10.10.2018  | https://github.com/funeralchris/csgo-list-of-cvars/commit/cec2951ed09be9276a1b3cef8b37c512f0fcc9a6#diff-ca2066e640294151d6fb370d1944ab19 |
