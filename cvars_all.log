@@ -542,8 +542,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1538610961 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1539126528 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1540315403 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1540315392 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -969,6 +969,7 @@ cl_rumblescale                            | 1.0      | "cl", "a", "ss"  | Scale 
 cl_savescreenshotstosteam                 | 1        | "devonly", "hidden" | Saves screenshots to the Steam's screenshot library
 cl_scalecrosshair                         | 1        | "cl", "a", "ss"  | Enable crosshair scaling (deprecated)
 cl_scoreboard_mouse_enable_binding        | +attack2 | "cl", "a"        | Name of the binding to enable mouse selection in the scoreboard
+cl_scoreboard_survivors_always_on         | 0        | "cl", "a"        | 
 cl_screenshotlocation                     |          | "devonly", "hidden" | Location to tag the screenshot with
 cl_screenshotname                         |          | "devonly"        | Custom Screenshot name
 cl_screenshotusertag                      |          | "devonly", "hidden" | User to tag in the screenshot
@@ -2831,10 +2832,6 @@ panorama_camera_lookat_scale              | 0.1      | "devonly", "cl"  |
 panorama_camera_rotate_altitude_scale     | 0.004    | "devonly", "cl"  | 
 panorama_camera_rotate_azimuth_scale      | 0.004    | "devonly", "cl"  | 
 panorama_camera_rotate_radius_scale       | 1.0      | "devonly", "cl"  | 
-panorama_debugger_saved_height            | 720      | "a"              | 
-panorama_debugger_saved_width             | 1280     | "a"              | 
-panorama_debugger_saved_xpos              | 0        | "a"              | 
-panorama_debugger_saved_ypos              | 0        | "a"              | 
 panorama_dump_deny_input                  | cmd      | "devonly"        | Dumps panels currently denying all input to the game
 panorama_dump_events_backlog              | 0        |                  | 
 panorama_light_inout_scale                | 0.5      | "devonly", "cl"  | 
@@ -3855,7 +3852,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1873299847717 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1878750413897 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4000,7 +3997,7 @@ sv_hibernate_ms_vgui                      | 20       |                  | # of m
 sv_hibernate_postgame_delay               | 5        |                  | # of seconds to wait after final client leaves before hibernating.
 sv_hibernate_punt_tv_clients              | 0        |                  | When enabled will punt all GOTV clients during hibernation
 sv_hibernate_when_empty                   | 1        |                  | Puts the server into extremely low CPU usage mode when no clients connected
-sv_holiday_mode                           | 0        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
+sv_holiday_mode                           | 1        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
 sv_hosting_lobby                          | 0        | "devonly", "rep" | 
 sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" | 
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
@@ -4052,7 +4049,7 @@ sv_maxrate                                | 0        | "rep"            | Max ba
 sv_maxreplay                              | 0        | "devonly"        | Maximum replay time in seconds
 sv_maxroutable                            | 1200     | "devonly"        | Server upper bound on net_maxroutable that a client can use.
 sv_maxspeed                               | 320      | "cl", "nf", "rep" | 
-sv_maxunlag                               | 1.0      | "devonly", "sv"  | Maximum lag compensation in seconds
+sv_maxunlag                               | 0.200    | "sv"             | Maximum lag compensation in seconds
 sv_maxupdaterate                          | 64       | "rep"            | Maximum updates per second that the server will allow
 sv_maxuptimelimit                         | 0        |                  | If set, whenever a game ends, if the server uptime exceeds this number of hours, the server will exit.
 sv_maxusrcmdprocessticks                  | 16       | "sv"             | Maximum number of client-issued usrcmd ticks that can be replayed in packet loss conditions, 0 to allow no restrictions
