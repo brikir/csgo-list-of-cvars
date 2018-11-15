@@ -542,8 +542,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1541469971 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1541601536 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1542248967 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1542248960 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -1263,7 +1263,7 @@ dsp_mix_min                               | 0.2      | "cheat", "demo"  |
 dsp_off                                   | 0        | "cheat"          | 
 dsp_player                                | 0        | "demo"           | 
 dsp_reload                                | cmd      | "cheat"          | 
-dsp_room                                  | 29.000000 | "devonly", "demo" | 
+dsp_room                                  | 29       | "devonly", "demo" | 
 dsp_slow_cpu                              | 0        | "cheat"          | 
 dsp_spatial                               | 40.000000 | "devonly", "demo" | 
 dsp_speaker                               | 50.000000 | "devonly", "demo" | 
@@ -2306,6 +2306,8 @@ mp_defaultteam                            | 0        | "devonly", "sv"  |
 mp_defuser_allocation                     | 0        | "cl", "rep"      | How to allocate defusers to CTs at start or round: 0=none, 1=random, 2=everyone
 mp_disable_autokick                       | cmd      | "sv"             | Prevents a userid from being auto-kicked
 mp_disable_respawn_times                  | 0        | "devonly", "cl", "nf", "rep" | 
+mp_disconnect_kills_bots                  | 0        | "sv", "cl"       | When a bot disconnects, kill them first.  Requires mp_disconnect_kills_players.
+mp_disconnect_kills_players               | 1        | "sv", "cl"       | When a player disconnects, kill them first (triggering item drops, stats, etc.)
 mp_display_kill_assists                   | 1        | "cl", "rep"      | Whether to display and score player assists
 mp_dm_bonus_length_max                    | 30       | "sv", "rep"      | Maximum time the bonus time will last (in seconds)
 mp_dm_bonus_length_min                    | 30       | "sv", "rep"      | Minimum time the bonus time will last (in seconds)
@@ -3851,7 +3853,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1887184623671 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1894022339986 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
