@@ -548,7 +548,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1544141323 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1544141312 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1544223744 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3647,6 +3647,7 @@ snd_dump_filepaths                        | cmd      |                  |
 snd_dumpclientsounds                      | cmd      | "cheat"          | Dump sounds to console
 snd_dvar_dist_max                         | 1320     | "cheat"          | Play full 'far' sound at this distance
 snd_dvar_dist_min                         | 240      | "cheat"          | Play full 'near' sound at this distance
+snd_dzmusic_volume                        | 0.2      | "a"              | Relative volume of the Danger Zone victory music.
 snd_filter                                |          | "cheat"          | 
 snd_find_channel                          |          | "devonly"        | Scan every channel to find the corresponding sound.
 snd_foliage_db_loss                       | 4        | "cheat"          | foliage dB loss per 1200 units
@@ -3921,7 +3922,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1906109283524 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1906528464528 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
