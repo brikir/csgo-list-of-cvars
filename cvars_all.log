@@ -548,7 +548,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1544141323 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1544223744 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1544276480 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -1319,6 +1319,8 @@ dumpentityfactories                       | cmd      | "sv"             | Lists 
 dumpeventqueue                            | cmd      | "sv"             | Dump the contents of the Entity I/O event queue to the console.
 dumpgamestringtable                       | cmd      | "sv", "cheat"    | Dump the contents of the game string table to the console.
 dumpstringtables                          | cmd      |                  | Print string tables to console.
+dz_clearteams                             | cmd      | "sv"             | Clear all DZ teams
+dz_jointeam                               | cmd      | "sv", "print"    | dz_jointeam team# [userid#|name] - Join DZ team N (0 to leave your team).  Server admins can assign other players to teams.
 dz_shuffle_teams                          | cmd      | "sv"             | Shuffle all teams for Danger Zone
 dz_spawnselect_choose_hex                 | cmd      | "sv", "print"    | 
 echo                                      | cmd      |                  | Echo text to console.
@@ -3922,7 +3924,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1906528464528 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1907172472821 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4048,10 +4050,12 @@ sv_dump_class_table                       | cmd      |                  | Dump s
 sv_dump_serialized_entities_mem           | cmd      |                  | Dump serialized entity allocations stats.
 sv_dumpstringtables                       | 0        | "cheat"          | 
 sv_duplicate_playernames_ok               | 0        | "rep"            | When enabled player names won't have the (#) in front of their names its the same as another player.
+sv_dz_autojointeam                        | 1        | "sv"             | Whether players are automatically assigned a DZ team
 sv_dz_cash_bundle_size                    | 50       | "sv", "rep"      | Size of a cash bundle
 sv_dz_contractkill_reward                 | 10       | "sv", "rep"      | Cash bundles to award for a successful contract kill
 sv_dz_exploration_payment_amount          | 2        | "sv", "rep"      | Number of cash bundles to award for exploring a new sector
 sv_dz_hostage_rescue_reward               | 10       | "cl", "rep"      | Number of cash bundles to award for rescuing a hostage
+sv_dz_jointeam_allowed                    | 0        | "sv"             | Whether non-server admins are allowed to use the dz_jointeam command
 sv_dz_player_max_health                   | 120      | "sv"             | 
 sv_dz_player_spawn_armor                  | 0        | "sv"             | 
 sv_dz_player_spawn_health                 | 120      | "sv"             | 
@@ -4222,6 +4226,7 @@ sv_phys_props_block_movers                | 0        | "devonly", "sv"  |
 sv_player_parachute_velocity              | -200     | "sv", "rep"      | 
 sv_playerperfhistorycount                 | 20       | "devonly", "sv"  | Number of samples to maintain in player perf history
 sv_precacheinfo                           | cmd      |                  | Show precache info.
+sv_prime_accounts_only                    | 0        | "sv"             | When this setting is enabled only prime users can connect to this game server.
 sv_prop_door_open_speed_scale             | 1        | "sv", "rep"      | 
 sv_pure                                   | cmd      |                  | Show user data.
 sv_pure_checkvpk                          | cmd      |                  | CheckPureServerVPKFiles
