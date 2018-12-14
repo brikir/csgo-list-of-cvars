@@ -1288,7 +1288,7 @@ dsp_mix_min                               | 0.2      | "cheat", "demo"  |
 dsp_off                                   | 0        | "cheat"          | 
 dsp_player                                | 0        | "demo"           | 
 dsp_reload                                | cmd      | "cheat"          | 
-dsp_room                                  | 29       | "devonly", "demo" | 
+dsp_room                                  | 29.000000 | "devonly", "demo" | 
 dsp_slow_cpu                              | 0        | "cheat"          | 
 dsp_spatial                               | 40.000000 | "devonly", "demo" | 
 dsp_speaker                               | 50.000000 | "devonly", "demo" | 
@@ -3924,7 +3924,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1915325317730 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1915330733012 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
