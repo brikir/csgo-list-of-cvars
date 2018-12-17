@@ -548,7 +548,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1545073425 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1545073408 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1545073664 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -2078,7 +2078,7 @@ mat_rendered_faces_count                  | 0        | "cheat"          | Set to
 mat_rendered_faces_spew                   | cmd      |                  | 'mat_rendered_faces_spew <n>' Spew the number of faces rendered for the top N models used this frame (mat_rendered_faces_count must be set to use this)
 mat_report_queue_status                   | 0        | "devonly"        | 
 mat_reporthwmorphmemory                   | cmd      | "cheat"          | Reports the amount of size in bytes taken up by hardware morph textures.
-mat_resolveFullFrameDepth                 | 1        | "cheat"          | Enable depth resolve to a texture. 0=disable, 1=enable via resolve tricks if supported in hw, otherwise disable, 2=force extra depth only pass
+mat_resolveFullFrameDepth                 | 1        | "devonly"        | Enable depth resolve to a texture. 1=enable via resolve tricks if supported in hw, otherwise disable, 2=force extra depth only pass
 mat_reversedepth                          | 0        | "cheat"          | 
 mat_savechanges                           | cmd      |                  | saves current video configuration to the registry
 mat_screen_blur_override                  | -1.0     | "devonly", "cheat" | 
@@ -3924,7 +3924,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1919806728014 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1919819172510 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
