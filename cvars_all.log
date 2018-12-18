@@ -118,6 +118,13 @@ Name | Value | Flags | Description
 @panorama_box_shadow_no_comp_layer        | 1        | "devonly", "cheat" | 
 @panorama_cache_command_list_repaint_threshold | 0.25     | "devonly"        | 
 @panorama_cache_command_list_size_threshold | 2048     | "devonly"        | 
+@panorama_canvas_fxaa                     | 0        | "devonly", "cl"  | 0-off, 1-always use fxaa (not just as a fallback if scratch rt not large enough for SSAA)
+@panorama_canvas_fxaa_edge_threshold_Q    | .166     | "devonly", "cl"  | The minimum amount of local contrast required to apply algorithm: (0.063 - overkill, slower), (0.125 - high quality), (0.166 - default), (0.250 - low quality), (0.333 - too little, faster)
+@panorama_canvas_fxaa_edge_threshold_min_Q | 0.0      | "devonly", "cl"  | Trims the algorithm from processing darks: (0.0312 - visible limit, slower), (0.0625 - high quality, faster), (0.0833 - upper limit, the start of visible unfiltered edges). Special note: when using FXAA_GREEN_AS_LUMA, likely want to set this to zero
+@panorama_canvas_fxaa_subpixel_Q          | 0.75     | "devonly", "cl"  | Effects sub-pixel AA quality and inversely sharpness (only used on FXAA Quality): (0.0 - off), (1.0 - upper limit, softer), default = 0.75
+@panorama_canvas_ssaa                     | 1        | "devonly", "cl"  | 0-off, 1-use ssaa if possible, will add (or fallback to) fxaa if scratch rt not large enough for 1.25x supersmapling in both dimensions
+@panorama_canvas_ssaa_min_scale           | 1.5      | "devonly", "cl"  | min scaling of panel size for ssaa to be effective, otherwise resorts to fxaa
+@panorama_canvas_ssaa_scale               | 2.0      | "devonly", "cl"  | Scaling of panel size for ssaa
 @panorama_clamp_fractional_pixel_positions | 1        | "devonly"        | 
 @panorama_classes_force_invalidate        | 0        | "devonly"        | Force style invalidation of the entire panel subtree when adding / removing classes.
 @panorama_clear_frames_on_device_restore  | 2        | "devonly"        | 
@@ -398,6 +405,7 @@ ammo_buckshot_max                         | 32       | "cl", "rep"      |
 ammo_grenade_limit_breachcharge           | 3        | "cl", "rep"      | 
 ammo_grenade_limit_default                | 1        | "cl", "rep"      | 
 ammo_grenade_limit_flashbang              | 1        | "cl", "rep"      | 
+ammo_grenade_limit_snowballs              | 3        | "cl", "rep"      | 
 ammo_grenade_limit_total                  | 3        | "cl", "rep"      | 
 ammo_item_limit_healthshot                | 4        | "cl", "rep"      | 
 anim_3wayblend                            | 1        | "devonly", "cl", "rep" | Toggle the 3-way animation blending code.
@@ -548,7 +556,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1545073425 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1545073664 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1545133568 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -2078,7 +2086,7 @@ mat_rendered_faces_count                  | 0        | "cheat"          | Set to
 mat_rendered_faces_spew                   | cmd      |                  | 'mat_rendered_faces_spew <n>' Spew the number of faces rendered for the top N models used this frame (mat_rendered_faces_count must be set to use this)
 mat_report_queue_status                   | 0        | "devonly"        | 
 mat_reporthwmorphmemory                   | cmd      | "cheat"          | Reports the amount of size in bytes taken up by hardware morph textures.
-mat_resolveFullFrameDepth                 | 1        | "devonly"        | Enable depth resolve to a texture. 1=enable via resolve tricks if supported in hw, otherwise disable, 2=force extra depth only pass
+mat_resolveFullFrameDepth                 | 1        | "cheat"          | Enable depth resolve to a texture. 0=disable, 1=enable via resolve tricks if supported in hw, otherwise disable, 2=force extra depth only pass
 mat_reversedepth                          | 0        | "cheat"          | 
 mat_savechanges                           | cmd      |                  | saves current video configuration to the registry
 mat_screen_blur_override                  | -1.0     | "devonly", "cheat" | 
@@ -3924,7 +3932,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1919819172510 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1920369396097 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4127,7 +4135,7 @@ sv_hibernate_punt_tv_clients              | 0        |                  | When e
 sv_hibernate_when_empty                   | 1        |                  | Puts the server into extremely low CPU usage mode when no clients connected
 sv_highlight_distance                     | 500      | "cl", "rep"      | 
 sv_highlight_duration                     | 3.5      | "cl", "rep"      | 
-sv_holiday_mode                           | 0        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
+sv_holiday_mode                           | 2        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
 sv_hosting_lobby                          | 0        | "devonly", "rep" | 
 sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" | 
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
@@ -4301,6 +4309,7 @@ sv_shutdown                               | cmd      |                  | Sets t
 sv_signon_dos_disconnect                  | 20       | "devonly"        | Number of extra signon state confirmations required to disconnect a misbehaving client.
 sv_skirmish_id                            | 0        | "cl", "rep"      | Dedicated server skirmish id to run
 sv_skyname                                | sky_urb01 | "cl", "a", "rep" | Current name of the skybox texture
+sv_snowball_strength                      | 12.0     | "devonly", "sv", "rep" | Snowball strength
 sv_sound_discardextraunreliable           | 1        | "devonly"        | 
 sv_soundemitter_filecheck                 | cmd      | "devonly", "sv"  | Report missing wave files for sounds and game_sounds files.
 sv_soundemitter_flush                     | cmd      | "devonly", "sv"  | Flushes the sounds.txt system (server only)
