@@ -555,8 +555,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1545182471 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1545437184 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1547205138 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1547205120 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3932,7 +3932,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 1926065205828 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 1986957744357 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4135,7 +4135,7 @@ sv_hibernate_punt_tv_clients              | 0        |                  | When e
 sv_hibernate_when_empty                   | 1        |                  | Puts the server into extremely low CPU usage mode when no clients connected
 sv_highlight_distance                     | 500      | "cl", "rep"      | 
 sv_highlight_duration                     | 3.5      | "cl", "rep"      | 
-sv_holiday_mode                           | 2        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
+sv_holiday_mode                           | 0        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
 sv_hosting_lobby                          | 0        | "devonly", "rep" | 
 sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" | 
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
