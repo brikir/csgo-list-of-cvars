@@ -3932,7 +3932,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2022400676782 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2031846348593 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4490,7 +4490,9 @@ tv_broadcast                              | 0        |                  | Automa
 tv_broadcast1                             | 0        |                  | Automatically broadcasts all games as GOTV[1] demos through Steam.
 tv_broadcast_drop_fragments               | 0        | "hidden"         | Drop every Nth fragment
 tv_broadcast_keyframe_interval            | 3        |                  | The frequency, in seconds, of sending keyframes and delta fragments to the broadcast relay server
+tv_broadcast_keyframe_interval1           | 3        |                  | The frequency, in seconds, of sending keyframes and delta fragments to the broadcast1 relay server
 tv_broadcast_max_requests                 | 20       |                  | Max number of broadcast http requests in flight. If there is a network issue, the requests may start piling up, degrading server performance. If more than the specified number of requests are in flight, the new requests are dropped.
+tv_broadcast_max_requests1                | 20       |                  | Max number of broadcast1 http requests in flight. If there is a network issue, the requests may start piling up, degrading server performance. If more than the specified number of requests are in flight, the new requests are dropped.
 tv_broadcast_origin_auth                  | gocastauth | "hidden"         | X-Origin-Auth header of the broadcast POSTs
 tv_broadcast_origin_auth1                 | gocastauth | "hidden"         | X-Origin-Auth header of the broadcast1 POSTs
 tv_broadcast_resend                       | cmd      |                  | resend broadcast data to broadcast relay
