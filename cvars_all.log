@@ -555,8 +555,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1550018823 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1550144256 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1551126539 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1551126528 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -817,7 +817,7 @@ cl_dz_playagain_auto_spectate             | 0        | "cl", "a"        | Automa
 cl_ejectbrass                             | 1        | "devonly", "cl"  | 
 cl_embedded_stream_audio_volume           | 60       | "cl", "hidden", "a" | Embedded stream audio volume
 cl_embedded_stream_audio_volume_xmaster   | 1        | "cl", "hidden", "a" | Whether embedded stream audio volume gets multiplied by master volume
-cl_embedded_stream_video_playing          | 0.603960 | "devonly", "cl", "hidden" | Embedded stream video playing state
+cl_embedded_stream_video_playing          | 0        | "devonly", "cl", "hidden" | Embedded stream video playing state
 cl_enable_remote_splitscreen              | 0        | "devonly", "cl"  | Allows viewing of nonlocal players in a split screen fashion
 cl_ent_absbox                             | cmd      | "cl", "cheat"    | Displays the client's absbox for the entity under the crosshair.
 cl_ent_bbox                               | cmd      | "cl", "cheat"    | Displays the client's bounding box for the entity under the crosshair.
@@ -3932,7 +3932,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2039385733102 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2053900445013 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
