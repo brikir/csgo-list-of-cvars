@@ -438,7 +438,7 @@ bind                                      | cmd      |                  | Bind a
 bind_osx                                  | cmd      |                  | Bind a key for OSX only.
 bink_preload_videopanel_movies            | 1        | "devonly", "cl"  | Preload Bink movies used by VideoPanel.
 blackbox                                  | 1        | "devonly"        | 
-blackbox_dump                             | cmd      | "norecord"       | Dump the contents of the blackbox
+blackbox_dump                             | cmd      | "devonly", "cheat", "norecord" | Dump the contents of the blackbox
 blackbox_record                           | cmd      | "norecord"       | Record an entry into the blackbox
 blink_duration                            | 0.2      | "devonly", "cl"  | How many seconds an eye blink will last.
 bot_add                                   | cmd      | "sv"             | bot_add <t|ct> <type> <difficulty> <name> - Adds a bot matching the given criteria.
@@ -556,7 +556,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1551126539 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1551126528 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1551138304 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3932,7 +3932,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2053900445013 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2053956591124 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4071,6 +4071,7 @@ sv_dz_reset_danger_zone                   | cmd      | "sv"             |
 sv_dz_show_enemy_name_scope_range         | 800      | "sv"             | 
 sv_dz_show_security_door_item_price       | 0        | "devonly", "sv"  | 
 sv_dz_show_weapon_spawns                  | 0        | "devonly", "sv"  | 
+sv_dz_spec_group_teams                    | 1        | "sv"             | If set, will group players into their teams for spectating, if 0, spectating numbers will be the default individual players
 sv_dz_team_count                          | 1        | "cl", "rep"      | Number of players per team
 sv_dz_warmup_tablet                       | 1        | "sv"             | 
 sv_dz_warmup_weapon                       | weapon_glock | "sv"             | 
@@ -4570,6 +4571,7 @@ ui_playsettings_maps_official_deathmatch  | mg_casualsigma | "cl", "a"        |
 ui_playsettings_maps_workshop             |          | "cl", "a"        | 
 ui_playsettings_mode_listen               | casual   | "cl", "a"        | 
 ui_playsettings_mode_official_dz          | survival | "cl", "a"        | 
+ui_playsettings_survival_solo             | 0        | "cl", "a"        | 
 ui_playsettings_warmup_map_name           | de_mirage | "cl", "a"        | 
 ui_popup_weaponupdate_version             | 0        | "cl", "a"        | 
 ui_posedebug_fade_in_time                 | 0.2      | "cl", "cheat", "norecord" | Time during which a new pose activity layer is shown in green in +posedebug UI
