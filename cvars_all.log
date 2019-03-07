@@ -555,8 +555,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1551126539 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1551138304 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1551919627 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1551919616 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -846,6 +846,7 @@ cl_grass_mip_bias                         | -0.5     | "a"              |
 cl_gunlowerangle                          | 2        | "devonly", "cl"  | 
 cl_gunlowerspeed                          | 0.1      | "devonly", "cl"  | 
 cl_headbob_land_dip_amt                   | 4        | "devonly", "cl"  | 
+cl_hide_avatar_images                     |          | "cl", "a"        | Hide avatar images for other players.  	0 - Off. 	1 - Block All 	2 - Block all but friends
 cl_hideserverip                           | 0        |                  | If set to 1, server IPs will be hidden in the console (except when you type 'status')
 cl_http_log_enable                        | 0        | "cl", "norecord" | Allows sending HTTP log from client main menu.
 cl_hud_background_alpha                   | 0.5      | "cl", "a"        | 
@@ -991,6 +992,7 @@ cl_resend_timeout                         | 60       |                  | Total 
 cl_retire_low_priority_lights             | 0        | "devonly"        | Low priority dlights are replaced by high priority ones
 cl_righthand                              | 1        | "cl", "a", "ss"  | Use right-handed view models.
 cl_rumblescale                            | 1.0      | "cl", "a", "ss"  | Scale sensitivity of rumble effects (0 to 1.0)
+cl_sanitize_player_names                  | 0        | "cl", "a"        | Replace names of other players with something non-offensive.
 cl_savescreenshotstosteam                 | 1        | "devonly", "hidden" | Saves screenshots to the Steam's screenshot library
 cl_scalecrosshair                         | 1        | "cl", "a", "ss"  | Enable crosshair scaling (deprecated)
 cl_scoreboard_mouse_enable_binding        | +attack2 | "cl", "a"        | Name of the binding to enable mouse selection in the scoreboard
@@ -1006,6 +1008,7 @@ cl_shadowupdatespacing                    | 10.0     | "devonly", "cl"  |
 cl_showVGUIAttachments                    | 0        | "devonly", "cl"  | Shows the base attachment location of the vgui widget
 cl_show_bounds_errors                     | 0        | "devonly", "cl"  | 
 cl_show_clan_in_death_notice              | 1        | "cl", "a"        | Is set, the clan name will show next to player names in the death notices.
+cl_show_enemy_avatar_colors               | 1        | "devonly", "cl"  | 
 cl_show_equipment_value                   | 0        | "devonly", "cl"  | 
 cl_show_matchmaking_stat_spew             | 0        | "devonly", "cl"  | 
 cl_show_new_hint_delay                    | 10.0     | "devonly", "cl"  | 
@@ -2149,6 +2152,7 @@ mat_triplebuffered                        | 0        | "devonly"        | This m
 mat_unlit_new_path                        | 1        | "devonly"        | 
 mat_updateconvars                         | cmd      |                  | updates the video config convars
 mat_use_compressed_hdr_textures           | 1        | "devonly"        | 
+mat_using_d3d9ex                          | 0        | "devonly", "hidden" | 
 mat_verbose_texture_gen                   | 0        | "devonly"        | 
 mat_viewportscale                         | 1.0      | "cl", "cheat"    | Scale down the main viewport (to reduce GPU impact on CPU profiling)
 mat_viewportupscale                       | 1        | "cl", "cheat"    | Scale the viewport back up
@@ -3840,6 +3844,7 @@ spec_cameraman_disable_with_user_control  | 0        | "devonly", "cl"  | Disabl
 spec_cameraman_set_xray                   | cmd      | "cl"             | Client command to change the whether the spectator is using the cameraman's X-ray state, if they are active, or let the spectator choose.
 spec_cameraman_ui                         | 0        | "devonly", "cl"  | If a cameraman is active then use their UI commands (scoreboard, overview, etc.)
 spec_cameraman_xray                       | 0        | "devonly", "cl"  | If a cameraman is active then use their Xray state.
+spec_dz_group_teams                       | 1        | "cl"             | If set, will group players into their teams for spectating, if 0, spectating numbers will be the default individual players
 spec_freeze_cinematiclight_b              | 1.0      | "cl", "cheat"    | 
 spec_freeze_cinematiclight_g              | 1.2      | "cl", "cheat"    | 
 spec_freeze_cinematiclight_r              | 1.5      | "cl", "cheat"    | 
@@ -3932,7 +3937,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2053956591124 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2070992088464 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4071,7 +4076,6 @@ sv_dz_reset_danger_zone                   | cmd      | "sv"             |
 sv_dz_show_enemy_name_scope_range         | 800      | "sv"             | 
 sv_dz_show_security_door_item_price       | 0        | "devonly", "sv"  | 
 sv_dz_show_weapon_spawns                  | 0        | "devonly", "sv"  | 
-sv_dz_spec_group_teams                    | 1        | "sv"             | If set, will group players into their teams for spectating, if 0, spectating numbers will be the default individual players
 sv_dz_team_count                          | 1        | "cl", "rep"      | Number of players per team
 sv_dz_warmup_tablet                       | 1        | "sv"             | 
 sv_dz_warmup_weapon                       | weapon_glock | "sv"             | 
