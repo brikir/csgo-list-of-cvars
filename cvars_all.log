@@ -555,8 +555,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1551919627 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1552018432 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1553977353 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1553977614 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -1059,8 +1059,8 @@ cl_streams_image_sfurl                    | img://loadjpeg:(640x360): | "devonly
 cl_streams_mytwitchtv_channel             | http://www.twitch.tv/ | "devonly", "cl"  | Twitch.tv account channel URL
 cl_streams_mytwitchtv_nolink              | http://www.twitch.tv/settings/connections | "devonly", "cl"  | Twitch.tv account linking URL
 cl_streams_refresh_interval               | 300      | "devonly", "cl"  | How often to refresh streams list
-cl_streams_request_accept                 | application/vnd.twitchtv.v3+json | "devonly", "cl"  | Header for api request
-cl_streams_request_url                    | https://api.twitch.tv/kraken/streams?game=Counter-Strike%3A%20Global%20Offensive&limit=12 | "devonly", "cl"  | Number of streams requested for display
+cl_streams_request_accept                 | application/vnd.twitchtv.v5+json | "devonly", "cl"  | Header for api request
+cl_streams_request_url                    | https://api.twitch.tv/helix/streams?game_id=32399&first=12 | "devonly", "cl"  | Number of streams requested for display
 cl_streams_write_response_file            |          | "devonly", "cl"  | When set will save streams info file for diagnostics
 cl_sun_decay_rate                         | 0.05     | "cl", "cheat"    | 
 cl_sun_in_reflection_h_scale              | 2.0      | "cl", "cheat"    | 
@@ -1479,6 +1479,7 @@ fps_max_splitscreen                       | 300      | "devonly"        | Frame 
 fps_screenshot_frequency                  | 10       | "cheat"          | While the fps is below the threshold we will dump a screen shot this often in seconds (i.e. 10 = screen shot every 10 seconds when under the given fps.)
 fps_screenshot_threshold                  | -1       | "cheat"          | Dump a screenshot when the FPS drops below the given value.
 free_pass_peek_debug                      | 0        | "devonly", "sv"  | 
+fs_allow_unsafe_writes                    | 0        |                  | 0: Disallow writes to filesystem locations we don't own. 1: Allow such writes (potentially unsafe).
 fs_clear_open_duplicate_times             | cmd      |                  | Clear the list of files that have been opened.
 fs_dump_open_duplicate_times              | cmd      |                  | Set fs_report_long_reads 1 before loading to use this. Prints a list of files that were opened more than once and ~how long was spent reading from them.
 fs_enable_stats                           | 0        | "devonly"        | 
@@ -2334,6 +2335,7 @@ mp_capstyle                               | 1        | "devonly", "cl", "rep" | 
 mp_clan_ready_signal                      | ready    | "devonly", "sv"  | Text that team leader from each team must speak for the match to begin
 mp_clan_readyrestart                      | 0        | "devonly", "sv"  | If non-zero, game will restart once someone from each team gives the ready signal
 mp_competitive_endofmatch_extra_time      | 15       | "sv"             | After a competitive match finishes rematch voting extra time is given for rankings.
+mp_consecutive_loss_aversion              | 1        | "sv", "rep"      | How loss streak is affected with round win: 0 = win fully resets loss bonus, 1 = first win steps down loss bonus, 2 = first win holds loss bonus and step down starting with second win
 mp_consecutive_loss_max                   | 4        | "sv", "rep"      | 
 mp_coop_force_join_ct                     | 0        | "cl", "rep"      | If set, real players will auto join CT on join.
 mp_coopmission_bot_difficulty_offset      | 0        | "sv", "rep"      | The difficulty offset modifier for bots during coop missions.
@@ -2969,7 +2971,7 @@ playcast                                  | cmd      |                  | Play a
 playdemo                                  | cmd      |                  | Play a recorded demo file (.dem ).
 player_botdifflast_s                      | 2        | "cl", "a"        | 
 player_competitive_maplist_2v2_7_0_E8907D2E | mg_de_train,mg_de_lake,mg_de_inferno,mg_de_shortnuke,mg_de_vertigo,mg_gd_rialto,mg_de_shortdust,mg_de_overpass,mg_de_cbble | "cl", "a"        | 
-player_competitive_maplist_8_7_0_92A6FFBB | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_mirage,mg_cs_office,mg_de_cache,mg_de_biome,mg_de_abbey,mg_de_zoo,mg_cs_agency,mg_de_overpass,mg_de_cbble | "cl", "a"        | 
+player_competitive_maplist_8_7_0_33256CBB | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_de_cache,mg_de_biome,mg_de_abbey,mg_de_zoo,mg_cs_agency,mg_de_overpass | "cl", "a"        | 
 player_debug_print_damage                 | 0        | "sv", "cheat"    | When true, print amount and type of all damage received by player to console.
 player_nevershow_communityservermessage   | 0        | "cl", "a", "ss"  | 
 player_old_armor                          | 0        | "devonly", "sv"  | 
@@ -3937,7 +3939,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2072162785856 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2122599975505 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4584,9 +4586,9 @@ ui_reloadscheme                           | cmd      | "cl"             | Reload
 ui_steam_overlay_notification_position    | topleft  | "cl", "a"        | Steam overlay notification position
 ui_store_scaleform                        | 1        | "devonly", "cl", "hidden" | Sets store UI to display scaleform.
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
-ui_vanitysetting_itemid                   | 17293822569102704656 | "cl", "a"        | 
+ui_vanitysetting_itemid                   | 17293822569102704700 | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              | rifle1   | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     | ct       | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
