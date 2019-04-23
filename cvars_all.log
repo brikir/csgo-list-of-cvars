@@ -555,8 +555,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1553977353 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1554251022 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1555978505 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1555978503 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -2153,7 +2153,7 @@ mat_triplebuffered                        | 0        | "devonly"        | This m
 mat_unlit_new_path                        | 1        | "devonly"        | 
 mat_updateconvars                         | cmd      |                  | updates the video config convars
 mat_use_compressed_hdr_textures           | 1        | "devonly"        | 
-mat_using_d3d9ex                          | 0        | "devonly", "hidden" | 
+mat_using_d3d9ex                          | 1        | "devonly", "hidden" | 
 mat_verbose_texture_gen                   | 0        | "devonly"        | 
 mat_viewportscale                         | 1.0      | "cl", "cheat"    | Scale down the main viewport (to reduce GPU impact on CPU profiling)
 mat_viewportupscale                       | 1        | "cl", "cheat"    | Scale the viewport back up
@@ -3939,7 +3939,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2129483051709 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2153903513925 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4586,9 +4586,9 @@ ui_reloadscheme                           | cmd      | "cl"             | Reload
 ui_steam_overlay_notification_position    | topleft  | "cl", "a"        | Steam overlay notification position
 ui_store_scaleform                        | 1        | "devonly", "cl", "hidden" | Sets store UI to display scaleform.
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
-ui_vanitysetting_itemid                   | 17293822569102704700 | "cl", "a"        | 
-ui_vanitysetting_loadoutslot              | rifle1   | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_itemid                   | 14478988184 | "cl", "a"        | 
+ui_vanitysetting_loadoutslot              | secondary1 | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     | ct       | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
