@@ -559,7 +559,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1556671497 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1557250816 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1557274112 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3955,7 +3955,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2177325851817 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2178253057038 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4329,6 +4329,11 @@ sv_server_graphic1                        |          | "cl", "rep"      | A 360x
 sv_server_graphic2                        |          | "cl", "rep"      | A 220x45 (<16kb) image file in /csgo/ that will be displayed to spectators.
 sv_server_verify_blood_on_player          | 1        | "cl", "rep", "cheat" | 
 sv_setsteamaccount                        | cmd      |                  | token Set game server account token to use for logging in to a persistent game server account
+sv_shield_explosive_damage_cap            | 99       | "cl", "rep"      | 
+sv_shield_explosive_damage_crouch_bonus   | 10       | "cl", "rep"      | 
+sv_shield_explosive_damage_mindist        | 250      | "cl", "rep"      | 
+sv_shield_explosive_damage_mult           | 4        | "cl", "rep"      | 
+sv_shield_explosive_damage_scale          | 0.5      | "cl", "rep"      | 
 sv_shield_hitpoints                       | 650      | "cl", "rep"      | 
 sv_show_bot_difficulty_in_name            | 0        | "devonly", "cl", "rep" | 0 = hide bot difficulty in bot name, 1 = show bot difficulty in bot name
 sv_show_cull_props                        | 0        |                  | Print out props that are being culled/added by recipent proxies.
