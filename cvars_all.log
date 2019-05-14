@@ -1643,7 +1643,7 @@ hostage_feetyawrate                       | 720      | "devonly", "cl", "rep" | 
 hostage_is_silent                         | 0        | "sv", "cheat"    | When set, the hostage won't play any code driven response rules lines
 hostfile                                  | host.txt | "sv"             | The HOST file to load.
 hostip                                    | -1062731518 |                  | Host game server ip
-hostname                                  | [redacted] |                  | Hostname for server.
+hostname                                  | Counter-Strike: Global Offensive |                  | Hostname for server.
 hostport                                  | 27015    |                  | Host game server port
 http_cache_size                           | 150      | "devonly"        | 
 hud_alt_ticks                             | 1        | "devonly", "cl"  | 
@@ -1808,7 +1808,7 @@ loader_defer_non_critical_jobs            | 0        | "devonly"        |
 loader_dump_table                         | cmd      |                  | 
 loader_spew_info                          | 0        | "devonly"        | 0:Off, 1:Timing, 2:Completions, 3:Late Completions, 4:Creations/Purges, -1:All
 loader_throttle_io                        | 1        | "devonly"        | 
-lobby_default_privacy_bits1               | 6        | "cl", "a"        | Lobby default permissions (0: private, 1: public, 2: clan, 4: nearby, 6: clan and nearby)
+lobby_default_privacy_bits2               | 1        | "cl", "a"        | Lobby default permissions (0: private, 1: public)
 lobby_gamesearch_fake                     | 0        | "devonly", "cl"  | 
 lobby_spew_friend_info                    | 0        | "devonly", "cl"  | 
 lobby_stats_fake                          | 0        | "devonly", "cl"  | 
@@ -3955,7 +3955,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2178253057038 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 0        | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4099,6 +4099,7 @@ sv_dz_player_max_health                   | 120      | "sv"             |
 sv_dz_player_spawn_armor                  | 0        | "sv"             | 
 sv_dz_player_spawn_health                 | 120      | "sv"             | 
 sv_dz_reset_danger_zone                   | cmd      | "sv"             | 
+sv_dz_respawn_additional_wait_time_solo   | 15       | "devonly", "sv"  | 
 sv_dz_respawn_pick_time                   | 10       | "devonly", "sv"  | 
 sv_dz_respawn_wait_time_per_death         | 10       | "devonly", "sv"  | 
 sv_dz_show_enemy_name_scope_range         | 800      | "sv"             | 
@@ -4607,7 +4608,8 @@ ui_loading_tip_f1                         | 0.05     | "devonly", "cl"  |
 ui_loading_tip_f2                         | 0.40     | "devonly", "cl"  | 
 ui_loading_tip_refresh                    | 5        | "devonly", "cl"  | 
 ui_lobby_draft_enabled                    |          | "cl"             | 
-ui_nearbylobbies_filter                   | survival | "cl", "a"        | 
+ui_nearbylobbies_filter2                  | competitive | "cl", "a"        | 
+ui_new_events_alert_seen                  | 0        | "cl", "a"        | 
 ui_playsettings_maps_listen_casual        | random_classic | "cl", "a"        | 
 ui_playsettings_maps_listen_competitive   | random_classic | "cl", "a"        | 
 ui_playsettings_maps_listen_deathmatch    | random_classic | "cl", "a"        | 
@@ -4625,6 +4627,8 @@ ui_popup_weaponupdate_version             | 0        | "cl", "a"        |
 ui_posedebug_fade_in_time                 | 0.2      | "cl", "cheat", "norecord" | Time during which a new pose activity layer is shown in green in +posedebug UI
 ui_posedebug_fade_out_time                | 0.8      | "cl", "cheat", "norecord" | Time to keep a no longer active pose activity layer in red until removing it from +posedebug UI
 ui_reloadscheme                           | cmd      | "cl"             | Reloads the resource files for the active UI window
+ui_setting_advertiseforhire_auto          | 1        | "cl", "a"        | Whether users will automatically advertise for invites (0: off; 1: last; 2: auto)
+ui_setting_advertiseforhire_auto_last     | /competitive | "cl", "a"        | Which game mode users last used to advertise for invites
 ui_steam_overlay_notification_position    | topleft  | "cl", "a"        | Steam overlay notification position
 ui_store_scaleform                        | 1        | "devonly", "cl", "hidden" | Sets store UI to display scaleform.
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
