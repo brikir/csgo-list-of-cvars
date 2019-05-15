@@ -558,8 +558,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1556671497 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1557274112 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1557961481 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1557961472 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -1643,7 +1643,7 @@ hostage_feetyawrate                       | 720      | "devonly", "cl", "rep" | 
 hostage_is_silent                         | 0        | "sv", "cheat"    | When set, the hostage won't play any code driven response rules lines
 hostfile                                  | host.txt | "sv"             | The HOST file to load.
 hostip                                    | -1062731518 |                  | Host game server ip
-hostname                                  | Counter-Strike: Global Offensive |                  | Hostname for server.
+hostname                                  | [redacted] |                  | Hostname for server.
 hostport                                  | 27015    |                  | Host game server port
 http_cache_size                           | 150      | "devonly"        | 
 hud_alt_ticks                             | 1        | "devonly", "cl"  | 
@@ -3955,7 +3955,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 0        | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2192806635888 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
