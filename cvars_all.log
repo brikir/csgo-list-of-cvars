@@ -558,8 +558,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1557961481 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1558052096 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1558480393 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1558480384 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -966,7 +966,7 @@ cl_predictweapons                         | 1        | "cl", "user"     | Perfor
 cl_proximity_grass                        | 1        | "devonly"        | 
 cl_quest_events_print                     | cmd      | "cl"             | cl_quest_events_print
 cl_quest_schedule_print                   | cmd      | "cl"             | cl_quest_schedule_print
-cl_quickinventory_lastinv                 | 0        | "cl", "a"        | 
+cl_quickinventory_lastinv                 | 1        | "cl", "a"        | 
 cl_quickinventory_line_update_speed       | 65.0f    | "cl", "a"        | 
 cl_radar_always_centered                  | 1        | "cl", "a"        | If set to 0, the radar is maximally used. Otherwise the player is always centered, even at map extents.
 cl_radar_fast_transforms                  | 1        | "devonly", "cl"  | Faster way of placing icons on the mini map.
@@ -2986,6 +2986,7 @@ player_nevershow_communityservermessage   | 0        | "cl", "a", "ss"  |
 player_old_armor                          | 0        | "devonly", "sv"  | 
 player_ping                               | cmd      | "sv", "print"    | Creates a ping notification where the player is looking.
 player_ping_throttle_decay                | 0.58     | "sv", "cheat"    | Decay for how fast the ping throttle delay will decay
+player_survival_list_7_0_3                | mg_dz_blacksite,mg_dz_sirocco | "cl", "a"        | 
 player_teamplayedlast                     | 3        | "cl", "a", "ss"  | 
 player_wargames_list2_7_0_604             | mg_skirmish_flyingscoutsman,mg_skirmish_armsrace,mg_skirmish_demolition | "cl", "a"        | 
 playflush                                 | cmd      |                  | Play a sound, reloading from disk in case of changes.
@@ -3955,7 +3956,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2193796637320 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2206942718894 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4617,7 +4618,6 @@ ui_playsettings_maps_listen_scrimcomp2v2  | mg_de_inferno | "cl", "a"        |
 ui_playsettings_maps_listen_skirmish      | mg_skirmish_flyingscoutsman | "cl", "a"        | 
 ui_playsettings_maps_official_casual      | mg_casualsigma | "cl", "a"        | 
 ui_playsettings_maps_official_deathmatch  | mg_casualsigma | "cl", "a"        | 
-ui_playsettings_maps_official_dzsirocco   | mg_dz_sirocco | "cl", "a"        | 
 ui_playsettings_maps_workshop             |          | "cl", "a"        | 
 ui_playsettings_mode_listen               | casual   | "cl", "a"        | 
 ui_playsettings_mode_official_dz          | survival | "cl", "a"        | 
@@ -4634,8 +4634,8 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   | 14478988184 | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              | secondary1 | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
-ui_vanitysetting_team                     | ct       | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_team                     | t        | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
 unbindall                                 | cmd      |                  | Unbind all keys.
