@@ -559,7 +559,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1558480393 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1558555136 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1558563328 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -1818,12 +1818,15 @@ locator_background_border_thickness       | 2        | "devonly", "cl"  | How ma
 locator_background_color                  | 16 16 16 100 | "devonly", "cl"  | The default color for the background.
 locator_background_shift_x                | 3        | "devonly", "cl"  | How many pixels the background is shifted right.
 locator_background_shift_y                | 1        | "devonly", "cl"  | How many pixels the background is shifted down.
-locator_background_style                  | 2        | "devonly", "cl"  | Setting this to 1 will show rectangle backgrounds behind the items word-bubble pointers.
+locator_background_style                  | 2        | "devonly", "cl"  | Ping measurement completed
+Setting this to 1 will show rectangle backgrounds behind the items word-bubble pointers.
 locator_background_thickness_x            | 8        | "devonly", "cl"  | How many pixels the background borders the left and right.
 locator_background_thickness_y            | 0        | "devonly", "cl"  | How many pixels the background borders the top and bottom.
 locator_fade_time                         | 0.3      | "devonly", "cl"  | Number of seconds it takes for a lesson to fully fade in/out.
-locator_icon_max_size_non_ss              | 2        | "devonly", "cl"  | Minimum scale of the icon on the screen
+locator_icon_max_size_non_ss              | 2        | "devonly", "cl"  | Ping location: fra=7+0,lux=23+2/11+0,ams=21+2/15+0,vie=25+2/19+0,lhr=23+2/20+0,par=27+2/21+0,waw=26+2/22+0,sto=37+3/26+0,sto2=40+4/26+0,iad=104+10/95+2,sgp=259+25/204+15,gru=229+22/238+2
+Minimum scale of the icon on the screen
 locator_icon_min_size_non_ss              | 1.0      | "devonly", "cl"  | Minimum scale of the icon on the screen
+RelayNetWorkStatus:  avail=OK  config=OK  anyrelay=OK   (OK)
 locator_lerp_rest                         | 0.25f    | "devonly", "cl"  | Number of seconds before moving from the center.
 locator_lerp_speed                        | 5.0f     | "devonly", "cl"  | Speed that static lessons move along the Y axis.
 locator_lerp_time                         | 1.75f    | "devonly", "cl"  | Number of seconds to lerp before reaching final destination
@@ -3956,7 +3959,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2208296536743 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2208456186951 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
