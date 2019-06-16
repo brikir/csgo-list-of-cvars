@@ -559,7 +559,7 @@ cache_print                               | cmd      |                  | cache_
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
 cachedvalue_count_partybrowser            | 1560204809 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1560204800 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1560729088 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -3955,7 +3955,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2247105508233 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2252561534304 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4609,7 +4609,6 @@ ui_loading_tip_f2                         | 0.40     | "devonly", "cl"  |
 ui_loading_tip_refresh                    | 5        | "devonly", "cl"  | 
 ui_lobby_draft_enabled                    |          | "cl"             | 
 ui_nearbylobbies_filter2                  | competitive | "cl", "a"        | 
-ui_new_events_alert_seen                  | 0        | "cl", "a"        | 
 ui_playsettings_maps_listen_casual        | random_classic | "cl", "a"        | 
 ui_playsettings_maps_listen_competitive   | random_classic | "cl", "a"        | 
 ui_playsettings_maps_listen_deathmatch    | random_classic | "cl", "a"        | 
