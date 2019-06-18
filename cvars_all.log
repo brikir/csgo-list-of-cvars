@@ -558,8 +558,8 @@ c_thirdpersonshoulderoffset               | 20.0     | "cl", "a"        |
 cache_print                               | cmd      |                  | cache_print [section] Print out contents of cache memory.
 cache_print_lru                           | cmd      |                  | cache_print_lru [section] Print out contents of cache memory.
 cache_print_summary                       | cmd      |                  | cache_print_summary [section] Print out a summary contents of cache memory.
-cachedvalue_count_partybrowser            | 1560204809 | "cl", "hidden", "a" | 
-cachedvalue_count_teammates               | 1560729088 | "cl", "hidden", "a" | 
+cachedvalue_count_partybrowser            | 1560901641 | "cl", "hidden", "a" | 
+cachedvalue_count_teammates               | 1560901632 | "cl", "hidden", "a" | 
 callvote                                  | cmd      | "sv", "print"    | Start a vote on an issue.
 cam_collision                             | 1        | "cl", "a"        | When in thirdperson and cam_collision is set to 1, an attempt is made to keep the camera from passing though walls.
 cam_command                               | cmd      | "cl", "cheat"    | Tells camera to change modes
@@ -655,8 +655,8 @@ cl_blurPasses                             | 1        | "devonly", "cl"  |
 cl_blurTapSize                            | 0.5      | "devonly", "cl"  | 
 cl_bob_lower_amt                          | 21       | "cl", "a"        | The amount the viewmodel lowers when running
 cl_bob_version                            | 0        | "cl", "cheat"    | 
-cl_bobamt_lat                             | 0.33     | "cl", "a"        | The amount the viewmodel moves side to side when running
-cl_bobamt_vert                            | 0.14     | "cl", "a"        | The amount the viewmodel moves up and down when running
+cl_bobamt_lat                             | 0.4      | "cl", "a"        | The amount the viewmodel moves side to side when running
+cl_bobamt_vert                            | 0.25     | "cl", "a"        | The amount the viewmodel moves up and down when running
 cl_bobcycle                               | 0.98     | "cl", "a"        | the frequency at which the viewmodel bobs.
 cl_bobup                                  | 0.5      | "cl", "cheat"    | 
 cl_borrow_music_from_player_index         | 0        | "devonly", "cl"  | 
@@ -878,7 +878,7 @@ cl_jiggle_bone_sanity                     | 1        | "devonly", "cl"  | Preven
 cl_join_advertise                         | 1        | "cl", "a"        | Advertise joinable game in progress to Steam friends, otherwise need a Steam invite (2: all servers, 1: official servers, 0: none)
 cl_lagcomp_errorcheck                     | 0        | "devonly", "cl"  | Player index of other player to check for position errors.
 cl_lagcompensation                        | 1        | "cl", "user"     | Perform server side lag compensation of weapon firing events.
-cl_language                               | English  | "devonly", "hidden" | Language (from Steam API)
+cl_language                               | english  | "devonly", "hidden" | Language (from Steam API)
 cl_leafsystemvis                          | 0        | "cl", "cheat"    | 
 cl_leveloverview                          | 0        | "cl", "cheat"    | 
 cl_leveloverviewmarker                    | 0        | "cl", "cheat"    | 
@@ -3955,7 +3955,7 @@ steamcontroller_flow_interval             | 7000     | "devonly"        |
 steamcontroller_flow_sensitivity          | 0.75     | "devonly"        | 
 steamcontroller_haptic_intensity          | 320      | "devonly"        | 
 steamworks_sessionid_client               | 0        | "cl", "hidden", "user" | The client session ID for the new steamworks gamestats.
-steamworks_sessionid_lifetime_client      | 2252561534304 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
+steamworks_sessionid_lifetime_client      | 2254322969530 | "devonly", "cl", "hidden" | The full client session ID for the new steamworks gamestats.
 steamworks_sessionid_server               | 0        | "devonly", "cl", "hidden", "rep" | The server session ID for the new steamworks gamestats.
 step_spline                               | 0        | "devonly", "sv"  | 
 sticky_tooltips                           | 0        | "devonly", "cl"  | Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
@@ -4087,6 +4087,7 @@ sv_dz_autojointeam                        | 1        | "sv"             | Whethe
 sv_dz_cash_bundle_size                    | 50       | "sv", "rep"      | Size of a cash bundle
 sv_dz_contractkill_reward                 | 10       | "sv", "rep"      | Cash bundles to award for a successful contract kill
 sv_dz_enable_respawn                      | 1        | "cl", "rep"      | 
+sv_dz_enable_respawn_solos                | 0        | "cl", "rep"      | 
 sv_dz_exploration_payment_amount          | 2        | "sv", "rep"      | Number of cash bundles to award for exploring a new sector
 sv_dz_exploration_payment_amount_bonus    | 2        | "sv", "rep"      | Number of BONUS cash bundles to award for exploring (if the player has the item/upgrade)
 sv_dz_hostage_rescue_reward               | 18       | "cl", "rep"      | Number of cash bundles to award for rescuing a hostage
@@ -4106,9 +4107,8 @@ sv_dz_show_enemy_name_scope_range         | 800      | "sv"             |
 sv_dz_show_security_door_item_price       | 0        | "devonly", "sv"  | 
 sv_dz_show_weapon_spawns                  | 0        | "devonly", "sv"  | 
 sv_dz_squad_wipe_reward                   | 2        | "cl", "rep"      | Number of cash bundles to award for eliminating a squad
-sv_dz_team_count                          | 1        | "cl", "rep"      | Number of players per team
+sv_dz_team_count                          | 1        | "cl", "rep"      | Max players allowed per team
 sv_dz_warmup_tablet                       | 1        | "sv"             | 
-sv_dz_warmup_weapon                       | weapon_glock | "sv"             | 
 sv_dz_zone_bombdrop_money_reward          | 15       | "cl", "rep"      | How many money stacks players are rewarded each danger zone wave
 sv_dz_zone_bombdrop_money_reward_bonus    | 5        | "cl", "rep"      | How many bonus money stacks players are rewarded each danger zone wave when they have the bonus item
 sv_dz_zone_damage                         | 1        | "sv", "cheat"    | 
@@ -4632,7 +4632,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   | 14478988184 | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              | secondary1 | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     | t        | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
