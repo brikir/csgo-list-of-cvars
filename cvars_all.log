@@ -2758,6 +2758,10 @@ nb_shadow_dist                            | 400      | "devonly", "cl"  |
 net_allow_multicast                       | 1        | "a"              | 
 net_allow_syslink                         | 1        | "devonly"        | 
 net_blockmsg                              | 0        | "cheat"          | Discards incoming message: &lt;0\|1\|name&gt;
+net_chan_limit_msec                       | 0        |                  | Netchannel processing is limited to so many milliseconds, abort connection if exceeding budget
+net_chan_stats_dump                       | 0        |                  | Netchannel statistics will dump in the logs upon request
+net_chan_stats_dump_top_msgs              | 5        |                  | Netchannel statistics will dump so many top messages in each category
+net_chan_stats_lru                        | 3        |                  | Netchannel statistics LRU accumulation buffer size
 net_channels                              | cmd      |                  | Shows net channel info
 net_chokeloop                             | 0        | "devonly"        | Apply bandwidth choke to loopback packets
 net_client_steamdatagram_enable_override  | 0        | "cl"             | 0: Use connect method requested by GC.  &gt;0: Always use SDR if possible.  &lt;0: Always use direct UDP if possible
@@ -4632,7 +4636,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
