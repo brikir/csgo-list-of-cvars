@@ -2984,7 +2984,7 @@ playcast                                  | cmd      |                  | Play a
 playdemo                                  | cmd      |                  | Play a recorded demo file (.dem ).
 player_botdifflast_s                      | 2        | "cl", "a"        | 
 player_competitive_maplist_2v2_7_0_E8907D2E | mg_de_train,mg_de_lake,mg_de_inferno,mg_de_shortnuke,mg_de_vertigo,mg_gd_rialto,mg_de_shortdust,mg_de_overpass,mg_de_cbble | "cl", "a"        | 
-player_competitive_maplist_8_7_0_5BCF490A | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_de_cache,mg_de_ruby,mg_cs_workout,mg_cs_agency,mg_de_overpass | "cl", "a"        | 
+player_competitive_maplist_8_7_0_475B5511 | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_de_cache,mg_cs_agency,mg_de_overpass | "cl", "a"        | 
 player_debug_print_damage                 | 0        | "sv", "cheat"    | When true, print amount and type of all damage received by player to console.
 player_nevershow_communityservermessage   | 0        | "cl", "a", "ss"  | 
 player_old_armor                          | 0        | "devonly", "sv"  | 
@@ -4636,7 +4636,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
