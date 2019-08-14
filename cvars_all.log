@@ -1237,6 +1237,7 @@ debug_overlay_fullposition                | 0        | "devonly", "sv"  |
 debug_paint_alpha                         | 0        | "devonly"        | 
 debug_physimpact                          | 0        | "devonly", "sv"  | 
 debug_purchase_defidx                     | cmd      | "cl"             | Purchase an item by defindex
+debug_test_quest_hud                      | 0        | "devonly", "cl"  | Force quest hud to display for a particular quest
 debug_touchlinks                          | 0        | "devonly", "sv"  | Spew touch link activity
 debug_visibility_monitor                  | 0        | "sv", "cheat"    | 
 debugsystemui                             | cmd      | "cheat"          | Show/hide the debug system UI.
@@ -2439,12 +2440,9 @@ mp_ggtr_num_rounds_autoprogress           | 3        | "cl", "rep"      | Upgrad
 mp_give_player_c4                         | 1        | "cl", "rep"      | Whether this map should spawn a c4 bomb for a player or not.
 mp_global_damage_per_second               | 0.0      | "sv", "rep"      | If above 0, deal non-lethal damage to players over time.
 mp_guardian_bot_money_per_wave            | 800      | "sv", "rep"      | The amount of money bots get time each wave the players complete.  This # is absolute and not additive, the money is set to (this)x(wave#) for each bot on each wave.
-mp_guardian_loc_adjective                 |          | "sv", "rep"      | (If set) kill condition token (#quest_hud_guardian_adjective_&lt;name&gt;)
-mp_guardian_loc_condition                 |          | "sv", "rep"      | (If set) kill condition token (#quest_hud_guardian_condition_&lt;name&gt;)
-mp_guardian_loc_icon                      |          | "sv", "rep"      | (If set) icon to override for guardian mission
-mp_guardian_loc_mission                   | default  | "sv", "rep"      | Token to use to generate guardian mission (#quest_hud_guardian_mission_&lt;name&gt;)
-mp_guardian_loc_override                  |          | "sv", "rep"      | Token to use to display guardian mission (#quest_hud_guardian_override_&lt;name&gt;) (if exists)
-mp_guardian_loc_weapon                    |          | "sv", "rep"      | (If set) weapon name token (#SFUI_WPNHUD_&lt;name&gt;)
+mp_guardian_loc_string_desc               |          | "cl", "rep"      | Loc string token for instructions for this mission, otherwise default to kills with weapon.
+mp_guardian_loc_string_hud                | #guardian_mission_type_kills | "cl", "rep"      | Loc string token to use on hud for this mission, otherwise default to kills with weapon.
+mp_guardian_loc_weapon                    |          | "cl", "rep"      | Override to weapon dialog var applied to UI
 mp_guardian_player_dist_max               | 2000     | "sv", "rep"      | The maximum distance a player is allowed to get from the bombsite before they're killed.
 mp_guardian_player_dist_min               | 1300     | "sv", "rep"      | The distance at which we start to warn a player when they are too far from the guarded bombsite.
 mp_guardian_special_kills_needed          | 10       | "sv", "rep"      | The number of kills needed with a specific weapon.
@@ -2915,6 +2913,8 @@ panorama_camera_rotate_azimuth_scale      | 0.004    | "devonly", "cl"  |
 panorama_camera_rotate_radius_scale       | 1.0      | "devonly", "cl"  | 
 panorama_dump_deny_input                  | cmd      | "devonly"        | Dumps panels currently denying all input to the game
 panorama_dump_events_backlog              | 0        |                  | 
+panorama_dump_events_threshold_break      | 0        |                  | 
+panorama_dump_events_threshold_us         | 0        |                  | 
 panorama_light_inout_scale                | 0.5      | "devonly", "cl"  | 
 panorama_light_move_scale                 | 0.1      | "devonly", "cl"  | 
 panorama_light_rotate_altitude_scale      | 0.004    | "devonly", "cl"  | 
@@ -4636,7 +4636,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
