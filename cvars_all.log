@@ -870,6 +870,8 @@ cl_interpolate                            | 1        |                  | Enable
 cl_inventory_debug_tooltip                | 0        | "cl"             | 
 cl_inventory_saved_filter2                | all      | "cl", "a"        | 
 cl_inventory_saved_sort2                  | inv_sort_age | "cl", "a"        | 
+cl_invites_only_friends                   | 0        | "cl", "a"        | If turned on, will ignore in-game invites from recent teammates or other non-friends
+cl_invites_only_mainmenu                  | 0        | "cl", "a"        | If turned on, will ignore all invites when user is playing a match
 cl_jiggle_bone_debug                      | 0        | "cl", "cheat"    | Display physics-based 'jiggle bone' debugging information
 cl_jiggle_bone_debug_pitch_constraints    | 0        | "cl", "cheat"    | Display physics-based 'jiggle bone' debugging information
 cl_jiggle_bone_debug_yaw_constraints      | 0        | "cl", "cheat"    | Display physics-based 'jiggle bone' debugging information
@@ -4187,6 +4189,7 @@ sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" |
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
 sv_infinite_ammo                          | 0        | "cl", "rep"      | Player's active weapon will never run out of ammo. If set to 2 then player has infinite total ammo but still has to reload the magazine.
 sv_instancebaselines                      | 1        | "devonly"        | Enable instanced baselines. Saves network overhead.
+sv_invites_only_mainmenu                  | 0        | "cl", "rep"      | If turned on, will ignore all invites when user is playing a match
 sv_jump_impulse                           | 301.993377 | "cl", "rep"      | Initial upward velocity for player jumps; sqrt(2*gravity*height).
 sv_jump_impulse_exojump_multiplier        | 1.05     | "cl", "rep"      | ExoJump impulse multiplier
 sv_kick_ban_duration                      | 15       | "cl", "nf", "rep" | How long should a kick ban from the server should last (in minutes)
@@ -4549,6 +4552,7 @@ tv_broadcast_max_requests                 | 20       |                  | Max nu
 tv_broadcast_max_requests1                | 20       |                  | Max number of broadcast1 http requests in flight. If there is a network issue, the requests may start piling up, degrading server performance. If more than the specified number of requests are in flight, the new requests are dropped.
 tv_broadcast_origin_auth                  | gocastauth | "hidden"         | X-Origin-Auth header of the broadcast POSTs
 tv_broadcast_origin_auth1                 | gocastauth | "hidden"         | X-Origin-Auth header of the broadcast1 POSTs
+tv_broadcast_origin_delay                 | 0        | "hidden"         | Injection delay request for CDN rebroadcast frameworks, seconds
 tv_broadcast_resend                       | cmd      |                  | resend broadcast data to broadcast relay
 tv_broadcast_startup_resend_interval      | 10       |                  | The interval, in seconds, of re-sending startup data to the broadcast relay server (useful in case relay crashes, restarts or startup data http request fails)
 tv_broadcast_status                       | cmd      |                  | Print out broadcast status
@@ -4583,7 +4587,7 @@ tv_password                               |          | "prot", "nf", "norecord" 
 tv_playcast_delay_prediction              | 1        |                  | 
 tv_playcast_delay_resync                  | 0        |                  | To alleviate intermittent network connectivity problems, this is the number of seconds to wait before actually re-syncing the stream after failure
 tv_playcast_max_rcvage                    | 15       | "hidden"         | 
-tv_playcast_max_rtdelay                   | 55       | "hidden"         | 
+tv_playcast_max_rtdelay                   | 300      | "hidden"         | 
 tv_playcast_origin_auth                   |          | "hidden"         | Get request X-Origin-Auth string
 tv_playcast_retry_timeout                 | 12       |                  | In case of intermittent network problems, how long should playcast retry fragment retrieval before resorting to resync
 tv_port                                   | 27020    |                  | Host GOTV\[0\] port
@@ -4636,7 +4640,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
