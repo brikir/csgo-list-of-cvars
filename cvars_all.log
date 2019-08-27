@@ -4599,6 +4599,7 @@ tv_relayradio                             | 0        | "sv"             | Relay 
 tv_relaytextchat                          | 1        | "sv"             | Relay text chat data: 0=off, 1=say, 2=say+say_team
 tv_relayvoice                             | 1        |                  | Relay voice data: 0=off, 1=on
 tv_retry                                  | cmd      |                  | Reconnects the GOTV relay proxy 
+tv_secure_bypass                          | 0        |                  | Bypass secure challenge on GOTV port
 tv_snapshotrate                           | 32       | "rep"            | Snapshots broadcasted per second
 tv_snapshotrate1                          | 32       |                  | Snapshots broadcasted per second, GOTV\[1\]
 tv_spectator_port_offset                  | 0        | "cl"             | 
@@ -4640,7 +4641,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
