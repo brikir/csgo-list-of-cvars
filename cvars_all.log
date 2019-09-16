@@ -1214,6 +1214,7 @@ csm_quality_level                         | 0        | "devonly"        | Cascad
 csm_quality_level_optionsui               | 9999999  | "devonly", "cl"  | Used to set video property from options UI.
 csm_quality_level_restart                 | 0        | "devonly", "cl"  | Used to set video property at device reset.
 custom_bot_difficulty                     | 0        | "sv", "cl", "rep" | Bot difficulty for offline play.
+cv_bot_ai_bt_debug_target                 | -1       | "sv", "rep", "cheat" | Draw the behavior tree of the given bot.
 cvar_set                                  | cmd      |                  | Set the value of a ConVar regardless of its maximum/minimum values
 cvar_unhide_all                           | cmd      |                  | Unhide all FCVAR_HIDDEN and FCVAR_DEVELOPMENTONLY convars
 cvarlist                                  | cmd      |                  | Show the list of convars/concommands.
@@ -2333,6 +2334,7 @@ mp_backup_round_file_last                 |          | "sv"             | Every 
 mp_backup_round_file_pattern              | %prefix%_round%round%.txt | "sv"             | If set then server will save all played rounds information to files named by this pattern, e.g.'%prefix%_%date%_%time%_%team1%_%team2%_%map%_round%round%_score_%score1%_%score2%.txt'
 mp_blockstyle                             | 1        | "devonly", "cl", "rep" | Sets the style of capture point blocking used. 0 = Blocks break captures completely. 1 = Blocks only pause captures.
 mp_bonusroundtime                         | 15       | "devonly", "cl", "rep" | Time after round win until round restarts
+mp_bot_ai_bt                              |          | "sv"             | Use the specified behavior tree file to drive the bot behavior.
 mp_buy_allow_grenades                     | 1        | "cl", "rep"      | Whether players can purchase grenades from the buy menu or not.
 mp_buy_allow_guns                         | 255      | "cl", "rep"      | Whether players can purchase guns: pistols (1), SMGs (2), rifles (4), shotguns (8), sniper rifles (16), heavy MGs (32).
 mp_buy_anywhere                           | 0        | "cl", "nf", "rep" | When set, players can buy anywhere, not only in buyzones. 0 = default. 1 = both teams. 2 = Terrorists. 3 = Counter-Terrorists.
@@ -4641,7 +4643,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
