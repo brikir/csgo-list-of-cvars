@@ -846,6 +846,7 @@ cl_freezecampanel_position_dynamic        | 1        | "cl", "a"        | Turn o
 cl_fullupdate                             | cmd      | "cheat"          | Forces the server to send a full update packet
 cl_game_mode_convars                      | cmd      | "cl"             | Display the values of the convars for the current game_mode.
 cl_grass_mip_bias                         | -0.5     | "a"              | 
+cl_grenadepreview                         | 0        | "cl", "cheat"    | Show trajectory of a grenade when pin is pulled.
 cl_gunlowerangle                          | 2        | "devonly", "cl"  | 
 cl_gunlowerspeed                          | 0.1      | "devonly", "cl"  | 
 cl_headbob_land_dip_amt                   | 4        | "devonly", "cl"  | 
@@ -1042,6 +1043,7 @@ cl_showpluginmessages2                    | 0        | "a"              | Allow 
 cl_showpos                                | 0        | "cl"             | Draw current position at top of screen
 cl_showtextmsg                            | 1        | "devonly", "cl"  | Enable/disable text messages printing on the screen.
 cl_sidespeed                              | 450      | "cl", "cheat"    | 
+cl_sim_grenade_trajectory                 | cmd      | "cl", "cheat"    | Draw trajectory of the deployed grenade if thrown from this position. Takes an optional parameter for how long the drawn trajectory will last.
 cl_simdbones                              | 0        | "devonly", "cl", "rep" | Use SIMD bone setup.
 cl_simulationtimefix                      | 1        | "devonly", "cl"  | 
 cl_skipfastpath                           | 0        | "cl", "cheat"    | Set to 1 to stop all models that go through the model fast path from rendering
@@ -4326,6 +4328,7 @@ sv_replaybots                             | 1        |                  | If set
 sv_reservation_grace                      | 5        | "devonly"        | Time in seconds given for a lobby reservation.
 sv_reservation_tickrate_adjustment        | 0        |                  | Adjust server tickrate upon reservation
 sv_reservation_timeout                    | 45       |                  | Time in seconds before lobby reservation expires.
+sv_rethrow_last_grenade                   | cmd      | "sv", "cheat"    | Emit the last grenade thrown on the server.
 sv_reward_drop_delay                      | 3.0      | "devonly", "cl", "rep" | Delay between the end match scoreboard being shown and the beginning of item drops.
 sv_rollangle                              | 0        | "devonly", "cl", "nf", "rep" | Max view roll angle
 sv_rollspeed                              | 200      | "devonly", "cl", "nf", "rep" | 
@@ -4643,7 +4646,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
@@ -4844,7 +4847,7 @@ weapon_debug_spread_gap                   | 0.67     | "cl", "cheat", "ss" |
 weapon_debug_spread_show                  | 0        | "cl", "cheat", "ss" | Enables display of weapon accuracy; 1: show accuracy box, 3: show accuracy with dynamic crosshair
 weapon_land_dip_amt                       | 20.0     | "devonly", "cl", "rep", "cheat" | The amount the gun should dip when the player lands after a jump.
 weapon_max_before_cleanup                 | 0        | "cl"             | If set to non-zero, will remove the oldest dropped weapon to maintain the specified number of dropped weapons in the world.
-weapon_molotov_maxdetonateslope           | 30.0     | "devonly", "sv", "rep" | Maximum angle of slope on which the molotov will detonate
+weapon_molotov_maxdetonateslope           | 30.0     | "devonly", "cl", "rep" | Maximum angle of slope on which the molotov will detonate
 weapon_near_empty_sound                   | 1        | "cl", "rep", "cheat" | 
 weapon_recoil_cooldown                    | 0.55     | "cl", "rep", "cheat" | DEPRECATED. Recoil now decays using weapon_recoil_decay_coefficient
 weapon_recoil_decay1_exp                  | 3.5      | "cl", "rep", "cheat" | Decay factor exponent for weapon recoil
