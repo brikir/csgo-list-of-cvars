@@ -1081,9 +1081,9 @@ cl_tablet_mapmode                         | 1        | "cl", "a"        |
 cl_teamid                                 | 0        | "devonly", "cl"  | 
 cl_teamid_max                             | 1000     | "devonly"        | 
 cl_teamid_min                             | 200      | "devonly"        | 
-cl_teamid_overhead_always                 | 0        | "cl", "a"        | Always show team id over teammates. 1 = pips; 2 = pips, name, and equipment
 cl_teamid_overhead_maxdist                | 3000     | "cl", "cheat", "ss" | max distance at which the overhead team id icons will show
 cl_teamid_overhead_maxdist_spec           | 2000     | "cl", "cheat", "ss" | max distance at which the overhead team id icons will show when a spectator
+cl_teamid_overhead_mode                   | 2        | "cl", "a"        | Always show team id over teammates. 1 = pips; 2 = pips, name, and equipment
 cl_teammate_color_1                       | 248 246 45 | "devonly"        | 
 cl_teammate_color_2                       | 161 25 240 | "devonly"        | 
 cl_teammate_color_3                       | 0 181 98 | "devonly"        | 
