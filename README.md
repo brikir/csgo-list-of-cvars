@@ -45,3 +45,4 @@ Updates recently changed:
 | [26.8.2019](https://steamdb.info/patchnotes/4140606/) | "tv_secure_bypass" added | [Link](https://github.com/funeralchris/csgo-list-of-cvars/commit/400ce98aa14a0d3889d799f0478848017b7f0257) |
 | [16.9.2019](https://blog.counter-strike.net/index.php/2019/09/25510/) | "cv_bot_ai_bt_debug_target" and "mp_bot_ai_bt" added | [Link](https://github.com/funeralchris/csgo-list-of-cvars/commit/056842e204c49304784633d5052552e64d6e3175) |
 | [25.9.2019](https://blog.counter-strike.net/index.php/2019/09/25640/) | "cl_teamid_overhead_always 0" -> "cl_teamid_overhead_mode 2" | [Link](https://github.com/funeralchris/csgo-list-of-cvars/commit/a91da69f82fd54b38564a5a8766c43524ccd4fc6) |
+| [2.10.2019](https://blog.counter-strike.net/index.php/2019/10/25707/) | "cl_promoted_settings_acknowledged" added | [Link](https://github.com/funeralchris/csgo-list-of-cvars/commit/c0cd7ca35941cf663c2f0eab6c637ae24defa8db) |
