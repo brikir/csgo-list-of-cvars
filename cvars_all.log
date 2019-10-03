@@ -966,6 +966,7 @@ cl_predictioncopy_describe                | cmd      | "cl"             | Descri
 cl_predictionlist                         | 0        | "cl", "cheat"    | Show which entities are predicting<br>
 cl_predictphysics                         | 0        | "devonly", "cl"  | Use a prediction-friendly physics interface on the client
 cl_predictweapons                         | 1        | "cl", "user"     | Perform client side prediction of weapon effects.
+cl_promoted_settings_acknowledged         | 0:0      | "cl", "a"        | 
 cl_proximity_grass                        | 1        | "devonly"        | 
 cl_quest_events_print                     | cmd      | "cl"             | cl_quest_events_print
 cl_quest_schedule_print                   | cmd      | "cl"             | cl_quest_schedule_print
@@ -4646,7 +4647,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantb.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
