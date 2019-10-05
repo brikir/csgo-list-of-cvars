@@ -1,7 +1,7 @@
 # csgo-list-of-cvars
 ## Complete list
 
-You can find the complete list here: https://github.com/funeralchris/csgo-list-of-cvars/blob/master/cvars_all.log
+You can find the complete list here: [cvars_all.log](cvars_all.log)
 
 ## Recent changes
 
