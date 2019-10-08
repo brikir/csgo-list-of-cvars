@@ -645,6 +645,7 @@ cl_animationinfo                          | cmd      | "cl"             | Hud el
 cl_autobuy                                |          | "cl"             | The order in which autobuy will attempt to purchase items
 cl_autohelp                               | 1        | "cl", "a", "user" | Auto-help
 cl_autowepswitch                          | 1        | "cl", "a", "user", "ss" | Automatically switch to picked up weapons (if more powerful)
+cl_avatar_convert_png                     | cmd      | "cl", "cheat"    | Converts all rgb avatars in the avatars directory to png
 cl_avatar_convert_rgb                     | cmd      | "cl", "cheat"    | Converts all png avatars in the avatars directory to rgb
 cl_backspeed                              | 450      | "cl", "cheat"    | 
 cl_beam_test_traces                       | 0        | "devonly", "cl"  | Enable debug overlay on traces that determine where the client-side visible env_beam is drawn. Has no bearing on the server-side damage-causing part of the beam.
@@ -697,6 +698,7 @@ cl_crosshair_dynamic_maxdist_splitratio   | 0.35     | "cl", "a", "ss"  | If usi
 cl_crosshair_dynamic_splitalpha_innermod  | 1        | "cl", "a", "ss"  | If using cl_crosshairstyle 2, this is the alpha modification that will be used for the INNER crosshair pips once they've split. \[0 - 1\]
 cl_crosshair_dynamic_splitalpha_outermod  | 0.5      | "cl", "a", "ss"  | If using cl_crosshairstyle 2, this is the alpha modification that will be used for the OUTER crosshair pips once they've split. \[0.3 - 1\]
 cl_crosshair_dynamic_splitdist            | 7        | "cl", "a", "ss"  | If using cl_crosshairstyle 2, this is the distance that the crosshair pips will split into 2. (default is 7)
+cl_crosshair_friendly_warning             | 1        | "cl", "a"        | 0: always off, 1: only on default crosshair styles, 2: always on
 cl_crosshair_outlinethickness             | 1        | "cl", "a", "ss"  | Set how thick you want your crosshair outline to draw (0.1-3)
 cl_crosshair_recoil                       | 0        | "cl", "cheat"    | Recoil/aimpunch will move the user's crosshair to show the effect
 cl_crosshair_sniper_show_normal_inaccuracy | 0        | "cl", "a", "ss"  | Include standing inaccuracy when determining sniper crosshair blur
@@ -1851,6 +1853,7 @@ log_level                                 | cmd      | "norecord"       | Set th
 logaddress_add                            | cmd      |                  | Set address and port for remote host &lt;ip:port&gt;.
 logaddress_add_ex                         | cmd      |                  | Set address and port for remote host &lt;ip:port&gt; and supplies a unique token in the UDP packets.
 logaddress_add_http                       | cmd      | "sv"             | Set URI of a listener to receive logs via http post. Wrap URI in double quotes.
+logaddress_add_http_delayed               | cmd      | "sv"             | Set a delay and URI of a listener to receive logs via http post. Wrap URI in double quotes.
 logaddress_add_ts                         | cmd      |                  | Set address and port for remote host &lt;ip:port&gt; and uses a unique checksum from logaddress_token_secret in the UDP packets.
 logaddress_del                            | cmd      |                  | Remove address and port for remote host &lt;ip:port&gt;.
 logaddress_delall                         | cmd      |                  | Remove all udp addresses being logged to
@@ -2504,7 +2507,7 @@ mp_player_healthbuffer_decay_rate         | 0        | "devonly", "sv", "rep" | 
 mp_playercashawards                       | 1        | "cl", "rep"      | Players can earn money by performing in-game actions
 mp_playerid                               | 0        | "cl", "rep"      | Controls what information player see in the status bar: 0 all names; 1 team names; 2 no names
 mp_playerid_delay                         | 0.4      | "cl", "rep"      | Number of seconds to delay showing information in the status bar
-mp_playerid_hold                          | 0.2      | "cl", "rep"      | Number of seconds to keep showing old information in the status bar
+mp_playerid_hold                          | 0.1      | "cl", "rep"      | Number of seconds to keep showing old information in the status bar
 mp_radar_showall                          | 0        | "cl", "rep"      | Determines who should see all. 0 = default. 1 = both teams. 2 = Terrorists. 3 = Counter-Terrorists.
 mp_randomspawn                            | 0        | "cl", "rep"      | Determines whether players are to spawn. 0 = default; 1 = both teams; 2 = Terrorists; 3 = CTs.
 mp_randomspawn_dist                       | 0        | "cl", "rep"      | If using mp_randomspawn, determines whether to test distance when selecting this spot.
@@ -2549,6 +2552,7 @@ mp_taser_recharge_time                    | -1       | "cl", "rep"      | Determ
 mp_td_dmgtokick                           | 300      | "sv", "rep"      | The damage threshhold players have to exceed in a match to get kicked.
 mp_td_dmgtowarn                           | 200      | "sv", "rep"      | The damage threshhold players have to exceed in a match to get warned that they are about to be kicked.
 mp_td_spawndmgthreshold                   | 50       | "sv", "rep"      | The damage threshold players have to exceed at the start of the round to be warned/kick.
+mp_tdm_healthshot_killcount               | 3        | "cl", "rep"      | Grant healthshots in team deathmatch after n kills
 mp_team_timeout_max                       | 1        | "sv", "cl", "rep" | Number of timeouts each team gets per match.
 mp_team_timeout_time                      | 60       | "sv", "cl", "rep" | Duration of each timeout.
 mp_teamcashawards                         | 1        | "cl", "rep"      | Teams can earn money by performing in-game actions
@@ -4647,7 +4651,7 @@ ui_store_scaleform                        | 1        | "devonly", "cl", "hidden"
 ui_test_community_matchmaking             | 0        | "devonly", "cl"  | 
 ui_vanitysetting_itemid                   |          | "cl", "a"        | 
 ui_vanitysetting_loadoutslot              |          | "cl", "a"        | 
-ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_varianta.mdl | "cl", "a"        | 
+ui_vanitysetting_model2                   | models/player/custom_player/legacy/tm_jumpsuit_variantc.mdl | "cl", "a"        | 
 ui_vanitysetting_team                     |          | "cl", "a"        | 
 ui_volume_scale                           | 1.0      | "devonly"        | 
 unbind                                    | cmd      |                  | Unbind a key.
@@ -4862,7 +4866,7 @@ weapon_recoil_suppression_shots           | 4        | "cl", "rep", "cheat" | Nu
 weapon_recoil_variance                    | 0.55     | "cl", "rep", "cheat" | Amount of variance per recoil impulse
 weapon_recoil_vel_decay                   | 4.5      | "cl", "rep", "cheat" | Decay factor for weapon recoil velocity
 weapon_recoil_view_punch_extra            | 0.055    | "cl", "rep", "cheat" | Additional (non-aim) punch added to view from recoil
-weapon_reticle_knife_show                 | 0        | "cl", "rep"      | When enabled will show knife reticle on clients. Used for game modes requiring target id display when holding a knife.
+weapon_reticle_knife_show                 | 1        | "cl", "rep"      | When enabled will show knife reticle on clients. Used for game modes requiring target id display when holding a knife.
 weapon_showproficiency                    | 0        | "devonly", "sv"  | 
 weapon_sound_falloff_multiplier           | 1.0      | "cl", "rep", "cheat" | Scaling for falloff of weapon firing sounds
 webapi_values_init_buffer_size_0          | 65536    | "devonly", "cl"  | Initial buffer size for buffers in the WebAPIValues buffer pool
