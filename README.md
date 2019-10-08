@@ -46,3 +46,4 @@ Updates recently changed:
 | [16.9.2019](https://blog.counter-strike.net/index.php/2019/09/25510/) | "cv_bot_ai_bt_debug_target" and "mp_bot_ai_bt" added | [Link](../../commit/056842e204c49304784633d5052552e64d6e3175) |
 | [25.9.2019](https://blog.counter-strike.net/index.php/2019/09/25640/) | "cl_teamid_overhead_always 0" -> "cl_teamid_overhead_mode 2" | [Link](../../commit/a91da69f82fd54b38564a5a8766c43524ccd4fc6) |
 | [2.10.2019](https://blog.counter-strike.net/index.php/2019/10/25707/) | "cl_promoted_settings_acknowledged" added | [Link](../../csgo-list-of-cvars/commit/c0cd7ca35941cf663c2f0eab6c637ae24defa8db) |
+| [7.10.2019](https://blog.counter-strike.net/index.php/2019/10/25710/) | "cl_avatar_convert_png", "cl_crosshair_friendly_warning", "logaddress_add_http_delayed" and "mp_tdm_healthshot_killcount" added, "mp_playerid_hold" 0.2 -> 0.1, weapon_reticle_knife_show 0 -> 1 | [Link](../../csgo-list-of-cvars/commit/3aff0ea36ad1e3c6eff8df2d365bbc2291e6751a) |
