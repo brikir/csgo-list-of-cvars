@@ -1489,6 +1489,7 @@ foundry_select_entity                     | cmd      | "sv", "cheat"    | Select
 foundry_sync_hammer_view                  | cmd      | "sv", "cheat"    | Move Hammer's 3D view to the same position as the engine's 3D view.
 foundry_update_entity                     | cmd      | "sv", "cheat"    | Updates the entity's position/angles when in edit mode
 fov_cs_debug                              | 0        | "cl", "cheat"    | Sets the view fov if cheats are on.
+fov_tv_debug                              | 0        | "cl"             | Sets the GOTV view custom fov in roaming view.
 fps_max                                   | 300      |                  | Frame rate limiter
 fps_max_menu                              | 120      |                  | Frame rate limiter, main menu
 fps_max_splitscreen                       | 300      | "devonly"        | Frame rate limiter, splitscreen
@@ -2995,7 +2996,7 @@ playcast                                  | cmd      |                  | Play a
 playdemo                                  | cmd      |                  | Play a recorded demo file (.dem ).
 player_botdifflast_s                      | 2        | "cl", "a"        | 
 player_competitive_maplist_2v2_7_0_E8907D2E | mg_de_train,mg_de_lake,mg_de_inferno,mg_de_shortnuke,mg_de_vertigo,mg_gd_rialto,mg_de_shortdust,mg_de_overpass,mg_de_cbble | "cl", "a"        | 
-player_competitive_maplist_8_7_0_475B5511 | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_de_cache,mg_cs_agency,mg_de_overpass | "cl", "a"        | 
+player_competitive_maplist_8_7_0_1EBBCB77 | mg_de_dust2,mg_de_train,mg_de_inferno,mg_de_nuke,mg_de_vertigo,mg_de_mirage,mg_cs_office,mg_cs_agency,mg_de_overpass | "cl", "a"        | 
 player_debug_print_damage                 | 0        | "sv", "cheat"    | When true, print amount and type of all damage received by player to console.
 player_nevershow_communityservermessage   | 0        | "cl", "a", "ss"  | 
 player_old_armor                          | 0        | "devonly", "sv"  | 
@@ -4637,7 +4638,7 @@ ui_playsettings_maps_official_casual      | mg_casualsigma | "cl", "a"        |
 ui_playsettings_maps_official_deathmatch  | mg_casualsigma | "cl", "a"        | 
 ui_playsettings_maps_workshop             |          | "cl", "a"        | 
 ui_playsettings_mode_listen               | casual   | "cl", "a"        | 
-ui_playsettings_mode_official_x19         |          | "cl", "a"        | 
+ui_playsettings_mode_official_v20         | casual   | "cl", "a"        | 
 ui_playsettings_survival_solo             | 0        | "cl", "a"        | 
 ui_playsettings_warmup_map_name           | de_mirage | "cl", "a"        | 
 ui_popup_weaponupdate_version             | 0        | "cl", "a"        | 
