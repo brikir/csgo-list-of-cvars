@@ -49,3 +49,4 @@ Updates recently changed:
 | [7.10.2019](https://blog.counter-strike.net/index.php/2019/10/25710/) | "cl_avatar_convert_png", "cl_crosshair_friendly_warning", "logaddress_add_http_delayed" and "mp_tdm_healthshot_killcount" added, "mp_playerid_hold" 0.2 -> 0.1, weapon_reticle_knife_show 0 -> 1 | [Link](../../commit/3aff0ea36ad1e3c6eff8df2d365bbc2291e6751a) |
 | [18.10.2019](https://blog.counter-strike.net/index.php/2019/10/25894/) | "fov_tv_debug" added | [Link](../../commit/75e35e9e60dbd73cbaa061a2eb87aee0c563fd24) |
 | [19.11.2019](https://blog.counter-strike.net/index.php/2019/11/26310/) | Various changes, Operation | [Link](../../commit/4a6f1af84bdbf7be3f84dc0f4a010399fb50680b) |
+| [20.11.2019](https://steamdb.info/patchnotes/4406400/) | "sv_autoexec_mapname_cfg" added | [Link](../../commit/4eaa9a4112ff99731c9d72d424e9ef0e95bc7b4c) |
