@@ -4054,6 +4054,7 @@ sv_auto_adjust_bot_difficulty             | 1        | "sv"             | Adjust
 sv_auto_full_alltalk_during_warmup_half_end | 1        | "sv"             | When enabled will automatically turn on full all talk mode in warmup, at halftime and at the end of the match
 sv_autobunnyhopping                       | 0        | "cl", "rep"      | Players automatically re-jump while holding jump button
 sv_autobuyammo                            | 0        | "sv", "nf", "rep" | Enable automatic ammo purchase when inside buy zones during buy periods
+sv_autoexec_mapname_cfg                   | 0        | "sv"             | Execute a mapname cfg file on the server automatically in custom game modes that require it.
 sv_autosave                               | 1        | "devonly"        | Set to 1 to autosave game on level transition. Does not affect autosave triggers.
 sv_backspeed                              | 0.6      | "devonly", "cl", "rep" | How much to slow down backwards motion
 sv_benchmark_autovprofrecord              | 0        | "devonly", "sv"  | If running a benchmark and this is set, it will record a vprof file over the duration of the benchmark with filename benchmark.vprof.
