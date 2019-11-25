@@ -50,3 +50,4 @@ Updates recently changed:
 | [18.10.2019](https://blog.counter-strike.net/index.php/2019/10/25894/) | "fov_tv_debug" added | [Link](../../commit/75e35e9e60dbd73cbaa061a2eb87aee0c563fd24) |
 | [19.11.2019](https://blog.counter-strike.net/index.php/2019/11/26310/) | Various changes, Operation | [Link](../../commit/4a6f1af84bdbf7be3f84dc0f4a010399fb50680b) |
 | [20.11.2019](https://steamdb.info/patchnotes/4406400/) | "sv_autoexec_mapname_cfg" added | [Link](../../commit/4eaa9a4112ff99731c9d72d424e9ef0e95bc7b4c) |
+| [23.11.2019](https://blog.counter-strike.net/index.php/2019/11/26442/) | "cl_ignore_campaign_completion_requirements" added | [Link](../../commit/fa6bfe1840030e7b65ee4fba10c0e0af48ec27dd) |
