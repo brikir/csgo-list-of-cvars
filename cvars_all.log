@@ -906,6 +906,7 @@ cl_hud_playercount_pos                    | 0        | "cl", "a"        | 0 = de
 cl_hud_playercount_showcount              | 0        | "cl", "a"        | 0 = show player avatars (default), 1 = just show count number (no avatars)
 cl_hud_radar_scale                        | 1        | "cl", "a"        | 
 cl_idealpitchscale                        | 0.8      | "cl", "a"        | 
+cl_ignore_campaign_completion_requirements | 0        | "devonly", "cl"  | Ignores campaign progression requirements when granting quests.
 cl_ignorepackets                          | 0        | "cheat"          | Force client to ignore packets (for debugging).
 cl_interp                                 | 0.03125  | "cl", "user"     | Sets the interpolation amount (bounded on low side by server interp ratio settings).
 cl_interp_all                             | 0        | "devonly", "cl"  | Disable interpolation list optimizations.
