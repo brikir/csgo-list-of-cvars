@@ -3613,7 +3613,6 @@ script_help_client                        | cmd      | "cl"             | Output
 script_reload_code                        | cmd      | "sv"             | Execute a vscript file, replacing existing functions with the functions in the run script
 script_reload_entity_code                 | cmd      | "sv"             | Execute all of this entity's VScripts, replacing existing functions with the functions in the run scripts
 script_reload_think                       | cmd      | "sv"             | Execute an activation script, replacing existing functions with the functions in the run script
-sdr                                       | cmd      |                  | SteamDatagram Network Configuration
 sdr_spew_level                            | 5        |                  | verbosity level for SteamNetSockets spew
 send_round_backup_file_list               | cmd      | "sv", "hidden", "print" | 
 sensitivity                               | 2.5      | "cl", "a"        | Mouse sensitivity.
