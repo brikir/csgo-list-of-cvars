@@ -48,6 +48,7 @@ Updates recently changed:
 | [2.10.2019](https://blog.counter-strike.net/index.php/2019/10/25707/) | "cl_promoted_settings_acknowledged" added | [Link](../../commit/c0cd7ca35941cf663c2f0eab6c637ae24defa8db) |
 | [7.10.2019](https://blog.counter-strike.net/index.php/2019/10/25710/) | "cl_avatar_convert_png", "cl_crosshair_friendly_warning", "logaddress_add_http_delayed" and "mp_tdm_healthshot_killcount" added, "mp_playerid_hold" 0.2 -> 0.1, weapon_reticle_knife_show 0 -> 1 | [Link](../../commit/3aff0ea36ad1e3c6eff8df2d365bbc2291e6751a) |
 | [18.10.2019](https://blog.counter-strike.net/index.php/2019/10/25894/) | "fov_tv_debug" added | [Link](../../commit/75e35e9e60dbd73cbaa061a2eb87aee0c563fd24) |
-| [19.11.2019](https://blog.counter-strike.net/index.php/2019/11/26310/) | Various changes, Operation | [Link](../../commit/4a6f1af84bdbf7be3f84dc0f4a010399fb50680b) |
+| [19.11.2019](https://www.reddit.com/r/GlobalOffensive/comments/e2p860/9mb_cs_update/) | Various changes, Operation | [Link](../../commit/4a6f1af84bdbf7be3f84dc0f4a010399fb50680b) |
 | [20.11.2019](https://steamdb.info/patchnotes/4406400/) | "sv_autoexec_mapname_cfg" added | [Link](../../commit/4eaa9a4112ff99731c9d72d424e9ef0e95bc7b4c) |
 | [23.11.2019](https://blog.counter-strike.net/index.php/2019/11/26442/) | "cl_ignore_campaign_completion_requirements" added | [Link](../../commit/fa6bfe1840030e7b65ee4fba10c0e0af48ec27dd) |
+| [28.11.2019](https://blog.counter-strike.net/index.php/2019/11/26442/) | "sdr" removed | [Link](../../commit/0e5ad480b1a614e21da2254ee9925dc76227ae18) |
