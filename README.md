@@ -52,3 +52,4 @@ Updates recently changed:
 | [20.11.2019](https://steamdb.info/patchnotes/4406400/) | "sv_autoexec_mapname_cfg" added | [Link](../../commit/4eaa9a4112ff99731c9d72d424e9ef0e95bc7b4c) |
 | [23.11.2019](https://blog.counter-strike.net/index.php/2019/11/26442/) | "cl_ignore_campaign_completion_requirements" added | [Link](../../commit/fa6bfe1840030e7b65ee4fba10c0e0af48ec27dd) |
 | [28.11.2019](https://www.reddit.com/r/GlobalOffensive/comments/e2p860/9mb_cs_update/) | "sdr" removed | [Link](../../commit/0e5ad480b1a614e21da2254ee9925dc76227ae18) |
+| [7.12.2019](https://blog.counter-strike.net/index.php/2019/12/27192/) | "cl_voice_filter" changed | [Link](../../commit/106144ca846c64917960acd353f32532dd1c8cb8) |
