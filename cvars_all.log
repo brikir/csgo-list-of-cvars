@@ -1163,7 +1163,7 @@ cl_view                                   | cmd      | "cheat"          | Set th
 cl_viewmodel_shift_left_amt               | 1.5      | "cl", "a"        | The amount the viewmodel shifts to the left when shooting accuracy increases.
 cl_viewmodel_shift_right_amt              | 0.75     | "cl", "a"        | The amount the viewmodel shifts to the right when shooting accuracy decreases.
 cl_voice_buffer_time                      | 0.04     | "devonly"        | Amount of time between receiving voice data and playing the audio
-cl_voice_filter                           |          | "devonly"        | Filter voice by name substring
+cl_voice_filter                           |          |                  | Filter voice traffic, e.g.: 'steamids:765123,765456,7651244'
 cl_voice_hltv_buffer_time                 | 0.3      | "devonly"        | Amount of time between receiving voice data and playing the audio in hltv
 cl_voip_lobby_audio_volume                | 0        | "devonly", "cl", "hidden" | Lobby voip stream audio volume
 cl_weapon_clip_thinwalls                  | 1        | "cl", "rep", "cheat" | 
