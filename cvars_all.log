@@ -2502,13 +2502,19 @@ mp_ggtr_last_weapon_kill_ends_half        | 0        | "cl", "rep"      | End th
 mp_ggtr_num_rounds_autoprogress           | 3        | "cl", "rep"      | Upgrade the player's weapon after this number of rounds without upgrading
 mp_give_player_c4                         | 1        | "cl", "rep"      | Whether this map should spawn a c4 bomb for a player or not.
 mp_global_damage_per_second               | 0.0      | "sv", "rep"      | If above 0, deal non-lethal damage to players over time.
+mp_guardian_add_bounds_pt                 | cmd      | "sv"             | mp_guardian_add_bounds_pt
 mp_guardian_bot_money_per_wave            | 800      | "sv", "rep"      | The amount of money bots get time each wave the players complete.  This # is absolute and not additive, the money is set to (this)x(wave#) for each bot on each wave.
+mp_guardian_clear_all_bounds              | cmd      | "sv"             | mp_guardian_clear_all_bounds
+mp_guardian_draw_bounds                   | 0        | "devonly", "sv"  | 
+mp_guardian_emit_bounds_config            | cmd      | "sv"             | mp_guardian_emit_bounds_config
 mp_guardian_force_collect_hostages_timeout | 50       | "sv"             | Force bots to collect hostages after this amount of time if no enemy has been seen.
 mp_guardian_loc_string_desc               |          | "cl", "rep"      | Loc string token for instructions for this mission, otherwise default to kills with weapon.
 mp_guardian_loc_string_hud                | #guardian_mission_type_kills | "cl", "rep"      | Loc string token to use on hud for this mission, otherwise default to kills with weapon.
 mp_guardian_loc_weapon                    |          | "cl", "rep"      | Override to weapon dialog var applied to UI
+mp_guardian_new_bounds                    | cmd      | "sv"             | mp_guardian_new_bounds
 mp_guardian_player_dist_max               | 2000     | "sv", "rep"      | The maximum distance a player is allowed to get from the bombsite before they're killed.
 mp_guardian_player_dist_min               | 1300     | "sv", "rep"      | The distance at which we start to warn a player when they are too far from the guarded bombsite.
+mp_guardian_shoot_point                   | cmd      | "sv"             | mp_guardian_shoot_point
 mp_guardian_special_kills_needed          | 10       | "sv", "rep"      | The number of kills needed with a specific weapon.
 mp_guardian_special_weapon_needed         | awp      | "sv", "rep"      | The weapon that needs to be used to increment the kills needed to complete the mission.
 mp_guardian_target_site                   | -1       | "sv"             | If set to the index of a bombsite, will cause random spawns to be only created near that site.
@@ -3698,7 +3704,6 @@ snd_deathcamera_volume                    | 1.0      | "a"              | Relati
 snd_debug_gaincurve                       | 0        | "devonly"        | Visualize sound gain fall off
 snd_debug_gaincurvevol                    | 1.0      | "devonly"        | Visualize sound gain fall off
 snd_debug_panlaw                          | 0        | "cheat"          | Visualize panning crossfade curves
-snd_debug_sleep                           | cmd      |                  | 
 snd_defer_trace                           | 1        | "devonly"        | 
 snd_delay_for_choreo_enabled              | 1        | "devonly"        | Enables update of delay for choreo to compensate for IO latency.
 snd_delay_for_choreo_reset_after_N_milliseconds | 500      | "devonly"        | Resets the choreo latency after N milliseconds of VO not playing. Default is 500 ms.
@@ -4240,7 +4245,7 @@ sv_hibernate_punt_tv_clients              | 0        |                  | When e
 sv_hibernate_when_empty                   | 1        |                  | Puts the server into extremely low CPU usage mode when no clients connected
 sv_highlight_distance                     | 500      | "cl", "rep"      | 
 sv_highlight_duration                     | 3.5      | "cl", "rep"      | 
-sv_holiday_mode                           | 0        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
+sv_holiday_mode                           | 2        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
 sv_hosting_lobby                          | 0        | "devonly", "rep" | 
 sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" | 
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
