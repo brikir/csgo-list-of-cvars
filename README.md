@@ -53,3 +53,4 @@ Updates recently changed:
 | [23.11.2019](https://blog.counter-strike.net/index.php/2019/11/26442/) | "cl_ignore_campaign_completion_requirements" added | [Link](../../commit/fa6bfe1840030e7b65ee4fba10c0e0af48ec27dd) |
 | [28.11.2019](https://www.reddit.com/r/GlobalOffensive/comments/e2p860/9mb_cs_update/) | "sdr" removed | [Link](../../commit/0e5ad480b1a614e21da2254ee9925dc76227ae18) |
 | [7.12.2019](https://blog.counter-strike.net/index.php/2019/12/27192/) | "cl_voice_filter" changed | [Link](../../commit/106144ca846c64917960acd353f32532dd1c8cb8) |
+| [10.12.2019](https://blog.counter-strike.net/index.php/2019/12/27283/) | "snd_debug_sleep" removed, a couple of "mp_guardian"-cvars added, "sv_holiday_mode" -> 2 | [Link](../../commit/8db57e2f3f861deb82084e13be051068dcd9aa4f) |
