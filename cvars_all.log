@@ -4245,7 +4245,7 @@ sv_hibernate_punt_tv_clients              | 0        |                  | When e
 sv_hibernate_when_empty                   | 1        |                  | Puts the server into extremely low CPU usage mode when no clients connected
 sv_highlight_distance                     | 500      | "cl", "rep"      | 
 sv_highlight_duration                     | 3.5      | "cl", "rep"      | 
-sv_holiday_mode                           | 2        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
+sv_holiday_mode                           | 0        | "cl", "rep"      | 0 = OFF, 1 = Halloween, 2 = Winter
 sv_hosting_lobby                          | 0        | "devonly", "rep" | 
 sv_hudhint_sound                          | 1        | "devonly", "cl", "rep" | 
 sv_ignoregrenaderadio                     | 0        | "sv"             | Turn off Fire in the hole messages
