@@ -451,6 +451,7 @@ ammo_grenade_limit_total                  | 3        | "cl", "rep"      |
 ammo_item_limit_healthshot                | 4        | "cl", "rep"      | 
 anim_3wayblend                            | 1        | "devonly", "cl", "rep" | Toggle the 3-way animation blending code.
 anim_twistbones_enabled                   | 0        | "cl", "rep", "cheat" | Enable procedural twist bones.
+apply_crosshair_code                      | cmd      | "cl"             | Apply a crosshair code to the current crosshair settings.
 askconnect_accept                         | cmd      | "norecord"       | Accept a redirect request by the server.
 asw_engine_finished_building_map          | cmd      |                  | Notify engine that we've finished building a map
 asw_perf_wtf                              | 0        | "devonly", "cl"  | Disable updating of projected shadow textures from UpdateLight
@@ -742,7 +743,7 @@ cl_crosshair_dynamic_splitalpha_innermod  | 1        | "cl", "a", "ss"  | If usi
 cl_crosshair_dynamic_splitalpha_outermod  | 0.5      | "cl", "a", "ss"  | If using cl_crosshairstyle 2, this is the alpha modification that will be used for the OUTER crosshair pips once they've split. \[0.3 - 1\]
 cl_crosshair_dynamic_splitdist            | 7        | "cl", "a", "ss"  | If using cl_crosshairstyle 2, this is the distance that the crosshair pips will split into 2. (default is 7)
 cl_crosshair_friendly_warning             | 1        | "cl", "a"        | 0: always off, 1: only on default crosshair styles, 2: always on
-cl_crosshair_outlinethickness             | 1        | "cl", "a", "ss"  | Set how thick you want your crosshair outline to draw (0.1-3)
+cl_crosshair_outlinethickness             | 1        | "cl", "a", "ss"  | Set how thick you want your crosshair outline to draw (0-3)
 cl_crosshair_recoil                       | 0        | "cl", "cheat"    | Recoil/aimpunch will move the user's crosshair to show the effect
 cl_crosshair_sniper_show_normal_inaccuracy | 0        | "cl", "a", "ss"  | Include standing inaccuracy when determining sniper crosshair blur
 cl_crosshair_sniper_width                 | 1        | "cl", "a", "ss"  | If &gt;1 sniper scope cross lines gain extra width (1 for single-pixel hairline)
@@ -755,7 +756,6 @@ cl_crosshaircolor_r                       | 50       | "cl", "a", "ss"  |
 cl_crosshairdot                           | 1        | "cl", "a", "ss"  | 
 cl_crosshairgap                           | 1        | "cl", "a", "ss"  | 
 cl_crosshairgap_useweaponvalue            | 0        | "cl", "a", "ss"  | If set to 1, the gap will update dynamically based on which weapon is currently equipped
-cl_crosshairscale                         | 0        | "cl", "a", "ss"  | Crosshair scaling factor (deprecated)
 cl_crosshairsize                          | 5        | "cl", "a", "ss"  | 
 cl_crosshairstyle                         | 2        | "cl", "a", "ss"  | 0 = DEFAULT, 1 = DEFAULT STATIC, 2 = ACCURATE SPLIT (accurate recoil/spread feedback with a fixed inner part), 3 = ACCURATE DYNAMIC (accurate recoil/spread feedback), 4 = CLASSIC STATIC, 5 = OLD CS STYLE (fake recoil - inaccurate feedback)
 cl_crosshairthickness                     | 0.5      | "cl", "a", "ss"  | 
@@ -878,7 +878,7 @@ cl_fastdetailsprites                      | 1        | "cl", "cheat"    | whethe
 cl_fasttempentcollision                   | 5        | "devonly", "cl"  | 
 cl_find_ent                               | cmd      | "cl", "cheat"    | Find and list all client entities with classnames that contain the specified substring.<br>Format: cl_find_ent &lt;substring&gt;<br>
 cl_find_ent_index                         | cmd      | "cl", "cheat"    | Display data for clientside entity matching specified index.<br>Format: cl_find_ent_index &lt;index&gt;<br>
-cl_fixedcrosshairgap                      | 3        | "cl", "a", "ss"  | How big to make the gap between the pips in the fixed crosshair
+cl_fixedcrosshairgap                      | 3        | "cl", "a", "ss"  | For crosshair style 1: How big to make the gap between the pips in the fixed crosshair
 cl_flushentitypacket                      | 0        | "cheat"          | For debugging. Force the engine to flush an entity packet.
 cl_foot_contact_shadows                   | 1        | "cl"             | 
 cl_force_progress_notice_every_change     | 0        | "devonly", "cl"  | 
@@ -1053,7 +1053,6 @@ cl_rumblescale                            | 1.0      | "cl", "a", "ss"  | Scale 
 cl_sanitize_muted_players                 | 1        | "devonly", "cl"  | Hide names and avatars of muted players.
 cl_sanitize_player_names                  | 0        | "cl", "a"        | Replace names of other players with something non-offensive.
 cl_savescreenshotstosteam                 | 0        | "devonly", "hidden" | Saves screenshots to the Steam's screenshot library
-cl_scalecrosshair                         | 1        | "cl", "a", "ss"  | Enable crosshair scaling (deprecated)
 cl_scoreboard_mouse_enable_binding        | +attack2 | "cl", "a"        | Name of the binding to enable mouse selection in the scoreboard
 cl_scoreboard_survivors_always_on         | 0        | "cl", "a"        | 
 cl_screenshotlocation                     |          | "devonly", "hidden" | Location to tag the screenshot with
@@ -1541,9 +1540,9 @@ foundry_sync_hammer_view                  | cmd      | "sv", "cheat"    | Move H
 foundry_update_entity                     | cmd      | "sv", "cheat"    | Updates the entity's position/angles when in edit mode
 fov_cs_debug                              | 0        | "cl", "cheat"    | Sets the view fov if cheats are on.
 fov_tv_debug                              | 0        | "cl"             | Sets the GOTV view custom fov in roaming view.
-fps_max                                   | 300      |                  | Frame rate limiter
+fps_max                                   | 400      |                  | Frame rate limiter
 fps_max_menu                              | 120      |                  | Frame rate limiter, main menu
-fps_max_splitscreen                       | 300      | "devonly"        | Frame rate limiter, splitscreen
+fps_max_splitscreen                       | 400      | "devonly"        | Frame rate limiter, splitscreen
 fps_screenshot_frequency                  | 10       | "cheat"          | While the fps is below the threshold we will dump a screen shot this often in seconds (i.e. 10 = screen shot every 10 seconds when under the given fps.)
 fps_screenshot_threshold                  | -1       | "cheat"          | Dump a screenshot when the FPS drops below the given value.
 free_pass_peek_debug                      | 0        | "devonly", "sv"  | 
@@ -1666,6 +1665,7 @@ hideoverviewmap                           | cmd      | "cl"             | Hides 
 hidepanel                                 | cmd      | "cl"             | Hides a viewport panel &lt;name&gt;
 hideradar                                 | cmd      | "cl"             | Hides HUD radar
 hidescores                                | cmd      | "cl"             | Forcibly hide score panel
+highlight_patch                           | cmd      | "devonly", "cl", "cheat" | 
 highlight_sticker                         | cmd      | "devonly", "cl", "cheat" | 
 hl2_episodic                              | 0        | "devonly", "cl", "rep" | 
 hltv_replay_status                        | cmd      |                  | Show Killer Replay status and some statistics, works on listen or dedicated server.
