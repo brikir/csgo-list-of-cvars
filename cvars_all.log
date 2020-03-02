@@ -711,6 +711,8 @@ cl_bot_difficulty_ps3move                 | 0        | "devonly", "cl", "hidden"
 cl_bot_difficulty_sharpshooter            | 0        | "devonly", "cl", "hidden" | Bot difficulty while playing with SharpShooter device
 cl_brushfastpath                          | 1        | "cl", "cheat"    | 
 cl_burninggibs                            | 0        | "devonly", "cl"  | A burning player that gibs has burning gibs.
+cl_buywheel_nomousecentering              | 0        | "cl", "a", "ss"  | Set non-zero to prevent buy wheel from centering mouse into the wheel origin
+cl_buywheel_nonumberpurchasing            | 0        | "cl", "a", "ss"  | Set non-zero to prevent buy wheel from purchasing via number keys
 cl_cam_driver_compensation_scale          | 0.75     | "cl"             | 
 cl_camera_follow_bone_index               | -2       | "cl", "cheat"    | Index of the bone to follow.  -2 == disabled.  -1 == root bone.  0+ is bone index.
 cl_camera_height_restriction_debug        | 0        | "cl", "rep", "cheat" | 
@@ -1173,7 +1175,7 @@ cl_weapon_clip_thinwalls_lock             | 0        | "cl", "rep", "cheat" |
 cl_weapon_debug_print_accuracy            | 0        | "cl", "cheat"    | 
 cl_weapon_debug_show_accuracy             | 0        | "cl", "cheat"    | Draws a circle representing the effective range with every shot.
 cl_weapon_debug_show_accuracy_duration    | 10       | "cl", "cheat"    | 
-cl_weapon_pickup_lerp                     | 0        | "devonly", "cl"  | 
+cl_weapon_pickup_lerp                     | 2        | "devonly", "cl"  | 
 cl_winddir                                | 0        | "cl", "cheat"    | Weather effects wind direction angle
 cl_windspeed                              | 0        | "cl", "cheat"    | Weather effects wind speed scalar
 cl_wpn_sway_interp                        | 0.1      | "devonly", "cl"  | 
@@ -4149,6 +4151,7 @@ sv_dumpstringtables                       | 0        | "cheat"          |
 sv_duplicate_playernames_ok               | 0        | "rep"            | When enabled player names won't have the (#) in front of their names its the same as another player.
 sv_dz_autojointeam                        | 1        | "sv"             | Whether players are automatically assigned a DZ team
 sv_dz_cash_bundle_size                    | 50       | "sv", "rep"      | Size of a cash bundle
+sv_dz_cash_mega_bundle_size               | 13       | "sv", "rep"      | Size of a mega cash bundle
 sv_dz_contractkill_reward                 | 10       | "sv", "rep"      | Cash bundles to award for a successful contract kill
 sv_dz_enable_respawn                      | 1        | "cl", "rep"      | 
 sv_dz_enable_respawn_solos                | 0        | "cl", "rep"      | 
