@@ -3,9 +3,11 @@
 
 You can find the complete list here: [cvars_all.log](cvars_all.log)
 
-## Recent changes
+Notice: I do not longer maintain this list. Upcoming updates after 25.2.2020 are no longer added.
 
-Updates recently changed:
+## List of Updates
+
+Updates between 16.9.2018 and 25.2.2020:
 
 | Update | Description | Changes |
 | ------------- | ------------- | ------------- |
