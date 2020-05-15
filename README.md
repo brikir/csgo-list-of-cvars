@@ -3,7 +3,7 @@
 
 You can find the complete list here: [cvars_all.log](cvars_all.log)
 
-Notice: I do not longer maintain this list. Upcoming updates after 25.2.2020 are no longer added.
+Notice: This is a continuation of a list funeralchris used to keep up to date. 
 
 ## List of Updates
 
@@ -60,3 +60,5 @@ Updates between 16.9.2018 and 25.2.2020:
 | [11.2.2020](https://blog.counter-strike.net/index.php/2020/02/28557/) | "cl_mute_player_after_reporting_abuse", "cl_sanitize_muted_players", "mp_guardian_give_random_grenades_to_bots" and "sv_mute_players_with_social_penalties" added, option 2 for "cl_mute_all_but_friends_and_party" added | [Link](../../commit/400e11b283dbeed2bbb8aab72ca3fa95d7e8bb2b) |
 | [24.2.2020](https://blog.counter-strike.net/index.php/2020/02/28730/) | "apply_crosshair_code" and "highlight_patch" added, "cl_crosshairscale" and "cl_scalecrosshair" removed, "fps_max" and "fps_max_splitscreen" now 400, "cl_crosshair_outlinethickness" now from 0-3 instead of 0.1-3 | [Link](../../commit/5cc531d9e9cb87cb2db97c11c55e2159221d593e) |
 | [25.2.2020](https://blog.counter-strike.net/index.php/2020/02/28792/) | "cl_buywheel_nomousecentering", "cl_buywheel_nonumberpurchasing", "sv_dz_cash_mega_bundle_size" added, "cl_weapon_pickup_lerp 0" -> "2" | [Link](../../commit/6e0a6312093ed441daa668a7e5bc1e40d3fb5598) |
+
+Some updates missing, work in progress
